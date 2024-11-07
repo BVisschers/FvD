@@ -41,13 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik ga de website van Lounge Uderwear namaken. Hier vindt u de link van de website: https://lounge.com 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina
   Een van de pagina's die ik ga namaken is de homepage van Lounge Underwear.
   <img src="readme-images/home_scherm_lounge.jpg" width="375px" alt="Homepage Lounge Underwear mobiel">
   <img src="readme-images/desktop_home_lounge.jpg" width="375px" alt="Homepage Lounge Underwear desktop">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
   De andere pagina die ik ga namaken is de pagina Careers van Lounge Underwear.
   <img src="readme-images/career_scherm_lounge.jpg" width="375px" alt="Career Lounge Underwear mobiel">
   <img src="readme-images/desktop_career_lounge.jpg" width="375px" alt="Career Lounge Underwear desktop">
