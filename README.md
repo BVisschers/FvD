@@ -42,13 +42,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Een van de pagina's die ik ga namaken is de homepage van Lounge Underwear.
-  <img src="readme-images/home_scherm_lounge.jpg" width="375px" alt="Homepage Lounge Underwear mobiel">
-  <img src="readme-images/desktop_home_lounge.jpg" width="375px" alt="Homepage Lounge Underwear desktop">
+  <img src="readme-images/home_scherm_lounge.jpg" width="175px" alt="Homepage Lounge Underwear mobiel">
+  <img src="readme-images/desktop_home_lounge.jpg" width="175px" alt="Homepage Lounge Underwear desktop">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   De andere pagina die ik ga namaken is de pagina Careers van Lounge Underwear.
-  <img src="readme-images/career_scherm_lounge.jpg" width="375px" alt="Career Lounge Underwear mobiel">
-  <img src="readme-images/desktop_career_lounge.jpg" width="375px" alt="Career Lounge Underwear desktop">
+  <img src="readme-images/career_scherm_lounge.jpg" width="175px" alt="Career Lounge Underwear mobiel">
+  <img src="readme-images/desktop_career_lounge.jpg" width="175px" alt="Career Lounge Underwear desktop">
  
 </details>
 
@@ -61,6 +61,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Goed
+•	Alle links worden op een logische manier doorlopen en geen enkele link wordt overgeslagen. Ook hebben alle links een logische naam, zodat ze herkenbaar zijn en duidelijk is waar ze naartoe leiden.
+•	Alle oriëntatiepunten worden goed doorlopen; hij gaat ze allemaal langs.
+•	De vensterspots worden goed uitgevoerd en laten het scherm en de knoppenbalk zien.
+•	Als ik het pijltje naar rechts gebruik, worden alle woorden doorlopen en gespeld in de navigatie, zie de afbeelding.
+<img src="readme-images/woorden_spellen" width="275px" alt= woorden worden op de juiste manier gespeld ">
+
+Niet goed
+•	Als ik alle koppen wil doorlopen, gaat hij ze allemaal langs op de homepage, behalve de Black Friday- en Sunday Club-koppen; deze worden overgeslagen.
+•	De formuliervelden worden niet getoond als ik met mijn pijltje naar boven en beneden beweeg. Ik kom dan bij het logo in de navigatie, en VoiceOver zegt dan dat dit het laatste formulieronderdeel is of dat het niet gevonden is.
+•	Als ik de navigatie wil doorlopen, blijft deze hangen op het Lounge Underwear-logo.
+•	VoiceOver doorloopt tekens, maar toont niet het juiste woord op het scherm terwijl het gespeld wordt. In Lounge Underwear zit namelijk geen “D.”
+•	Het enige woord dat VoiceOver uitspreekt, is "Lounge." Verder spreekt hij geen woorden meer uit.
+•	Als ik door de website wil navigeren op de homepage, springt hij vaak terug naar de bovenkant van het scherm en gaat daarna verder waar hij gebleven was. Ook komt er soms een zwarte rand te staan om iets wat er niet is. Dan wordt er gezegd “lege regel”. Zie de foto, kijk in de rechterhoek bovenin.
+•	Onlogische volgorde onderaan de website in de footer. Als ik door de website navigeer met het pijltje naar beneden, gaat hij uiteindelijk van links naar rechts en dan weer naar links. Dit gaat van “Sign up to be..” naar “Discover,” dan naar “Help” en vervolgens naar “social iconen.”
+•	VoiceOver leest de afbeelingsnamen voor, maar deze zijn erg lang en zeggen weinig over de afbeelding zelf. De vele cijfers maken het verwarrend.
+
+
 
 </details>
 
