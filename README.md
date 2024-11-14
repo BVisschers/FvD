@@ -71,13 +71,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Niet goed<br>
 •	Als ik alle koppen wil doorlopen, gaat hij ze allemaal langs op de homepage, behalve de Black Friday- en Sunday Club-koppen; deze worden overgeslagen.<br>
 •	De formuliervelden worden niet getoond als ik met mijn pijltje naar boven en beneden beweeg. Ik kom dan bij het logo in de navigatie, en VoiceOver zegt dan dat dit het laatste formulieronderdeel is of dat het niet gevonden is.<br>
-<img src="readme-images/formulier_element_niet_gevonden.jpg" width="275" alt="formulier element wordt niet gevonden">
+<img src="readme-images/formulier_element_niet_gevonden.jpg" width="275" alt="formulier element wordt niet gevonden"> <br>
 •	Als ik de navigatie wil doorlopen, blijft deze hangen op het Lounge Underwear-logo.<br>
+<img src="readme-images/navigatie_doorlopen.jpg" width="275" alt="Navigatie wordt niet goed doorlopen"> <br>
 •	VoiceOver doorloopt tekens, maar toont niet het juiste woord op het scherm terwijl het gespeld wordt. In Lounge Underwear zit namelijk geen “D.”<br>
+<img src="readme-images/tekens_doorlopen.jpg" width="275" alt="Tekens worden niet juist doorlopen"><br>
 •	Het enige woord dat VoiceOver uitspreekt, is "Lounge." Verder spreekt hij geen woorden meer uit.<br>
+<img src="readme-images/woord_uitspreken.jpg" width="275" alt="Niet alle woorden worden uitgesproken"> <br>
 •	Als ik door de website wil navigeren op de homepage, springt hij vaak terug naar de bovenkant van het scherm en gaat daarna verder waar hij gebleven was. Ook komt er soms een zwarte rand te staan om iets wat er niet is. Dan wordt er gezegd “lege regel”. Zie de foto, kijk in de rechterhoek bovenin.<br>
+<img src="readme-images/lege_regel.jpg" width="275" alt="Lege regel getoond op afbeelding"> <br>
 •	Onlogische volgorde onderaan de website in de footer. Als ik door de website navigeer met het pijltje naar beneden, gaat hij uiteindelijk van links naar rechts en dan weer naar links. Dit gaat van “Sign up to be..” naar “Discover,” dan naar “Help” en vervolgens naar “social iconen.”<br>
+<img src="readme-images/onlogische_volgorde.jpg" width="275" alt="Afbeelding voor de onlogische volgorde"> <br>
 •	VoiceOver leest de afbeelingsnamen voor, maar deze zijn erg lang en zeggen weinig over de afbeelding zelf. De vele cijfers maken het verwarrend.<br>
+<img src="readme-images/afbeeldingsnaam.jpg" width="275" alt="woorden worden op de juiste manier gespeld"><br>
+
 
 
 
