@@ -71,6 +71,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Niet goed<br>
 •	Als ik alle koppen wil doorlopen, gaat hij ze allemaal langs op de homepage, behalve de Black Friday- en Sunday Club-koppen; deze worden overgeslagen.<br>
 •	De formuliervelden worden niet getoond als ik met mijn pijltje naar boven en beneden beweeg. Ik kom dan bij het logo in de navigatie, en VoiceOver zegt dan dat dit het laatste formulieronderdeel is of dat het niet gevonden is.<br>
+<img src="readme-images/formulier_element_niet_gevonden.jpg" width="275" alt="formulier element wordt niet gevonden">
 •	Als ik de navigatie wil doorlopen, blijft deze hangen op het Lounge Underwear-logo.<br>
 •	VoiceOver doorloopt tekens, maar toont niet het juiste woord op het scherm terwijl het gespeld wordt. In Lounge Underwear zit namelijk geen “D.”<br>
 •	Het enige woord dat VoiceOver uitspreekt, is "Lounge." Verder spreekt hij geen woorden meer uit.<br>
