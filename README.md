@@ -66,7 +66,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 •	Alle oriëntatiepunten worden goed doorlopen; hij gaat ze allemaal langs.<br>
 •	De vensterspots worden goed uitgevoerd en laten het scherm en de knoppenbalk zien.<br>
 •	Als ik het pijltje naar rechts gebruik, worden alle woorden doorlopen en gespeld in de navigatie, zie de afbeelding.<br>
-<img src="readme-images/woorden_spellen.jpg" width="275px" alt= woorden worden op de juiste manier gespeld ">
+<img src="readme-images/woorden_spellen.jpg" width="275" alt="woorden worden op de juiste manier gespeld">
 
 Niet goed<br>
 •	Als ik alle koppen wil doorlopen, gaat hij ze allemaal langs op de homepage, behalve de Black Friday- en Sunday Club-koppen; deze worden overgeslagen.<br>
