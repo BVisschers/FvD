@@ -130,7 +130,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <br>
   
   <strong>Wat was er nog lastig</strong><br>
-   .................
+  -De laatste oefening van Flexbox froggy vond ik erg lastig, hier kwam ik niet helemaal uit, zie de foto onder het kopje "Wat er goed ging".
    
   <strong>Inzichten toegankelijkheid</strong><br>
   Via deze manieren kan ik mijn website toegankelijker maken dan dat het nu is: <br>
