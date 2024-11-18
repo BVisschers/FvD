@@ -61,14 +61,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:<br><br>
-  Goed<br>
+  <strong>Goed</strong><br>
 •	Alle links worden op een logische manier doorlopen en geen enkele link wordt overgeslagen. Ook hebben alle links een logische naam, zodat ze herkenbaar zijn en duidelijk is waar ze naartoe leiden. <br>
 •	Alle oriëntatiepunten worden goed doorlopen; hij gaat ze allemaal langs.<br>
 •	De vensterspots worden goed uitgevoerd en laten het scherm en de knoppenbalk zien.<br>
 •	Als ik het pijltje naar rechts gebruik, worden alle woorden doorlopen en gespeld in de navigatie, zie de afbeelding.<br>
 <img src="readme-images/woorden_spellen.jpg" width="275" alt="afbeelding dat laat zien dat woorden op de juiste manier gespeld worden">
 
-Niet goed<br>
+<strong>Niet goed</strong><br>
 •	Als ik alle koppen wil doorlopen, gaat hij ze allemaal langs op de homepage, behalve de Black Friday- en Sunday Club-koppen; deze worden overgeslagen.<br>
 •	De formuliervelden worden niet getoond als ik met mijn pijltje naar boven en beneden beweeg. Ik kom dan bij het logo in de navigatie, en VoiceOver zegt dan dat dit het laatste formulieronderdeel is of dat het niet gevonden is.<br>
 <img src="readme-images/formulier_element_niet_gevonden.jpg" width="275" alt="formulier element wordt niet gevonden wordt getoond in de afbeelding"> <br>
@@ -119,7 +119,30 @@ Niet goed<br>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)<br>
+ 
+ <strong>Wat er goed ging</strong><br>
+  -Wat goed ging was het oefenen met Grid en Flexbox. Ik merk wel dat ik met Grid nog iets meer moeite heb omdat wij dit vorig jaar nog niet gehad hadden. De oefen oefeningen van Flexbox gingen mij goed af. <br>
+  
+  <img src="readme-images/grid_garden.jpg" width="175px" alt="scherm afbeelding van het eindscherm van grid garden, oefeningen gehaald!">
+  
+  <img src="readme-images/flexbox_froggy.jpg" width="175px" alt="scherm afbeelding van de laatste oefnening."> <br>
+  <br>
+  
+  <strong>Wat was er nog lastig</strong><br>
+   .................
+   
+  <strong>Inzichten toegankelijkheid</strong><br>
+  Via deze manieren kan ik mijn website toegankelijker maken dan dat het nu is: <br>
+  • Gebruik maken van Aria_labels, en deze toe te voegen aan interactieve elementen, zoals knoppen en formulieren om extra context te bieden aan screenreaders.<br>
+  • Ik moet ervoor zorgen dat alle afbeeldingen een logische beschrijvende alt-tekst hebben. <br>
+  • Gebruik maken van "nav" en ervoor zorgen dat er een duidelijke hiërarchie is met koppen zoals h1 en h2.<br>
+  • Ervoor zorgen dat er een goed kleurcontrast is tussen tekst en achtergrond. <br>
+  • Gebruik maken van flexbox, grid en meida queries zodat de website responsief is. <br>
+  • Kies leesbare lettertypes en pas de lettergrootte aan voor verschillende apparaten. <br>
+  • Voeg toetsenbordondersteuning toe aan interactieve elementen zoals dropdownmenu's. <br>
+  • Het beste is als ik ook een link toevoeg waarmee gebruikers direct naar de hoofdinhoud kunnen springen. <br>
+  • Gebruik maken van Lazy loading voor afbeeldingen kan ervoor zorgen dat de snelheid van de website verbeterd. 
 
 
   ### Agenda voor meeting
