@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Bodoni Moda';
+    src: url('BodoniModa-VariableFont_opsz,wght.ttf');
+       
+     font-style: normal;
+   }
+
+   ul:nth-of-type(2) img {
+    width: 2em; 
+    display: flex; 
+
+}
+
+h1 {
+    font-family:'Bodoni Moda', serif;
+    font-size: 2em;
+}
+
+section:nth-of-type(4) h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2em;
+    color: rgb(162, 16, 16);
+}
+
+section:first-of-type {
+    background-image: url('images/sunday_club.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+footer section:nth-of-type(1) img {
+    width: 15%; 
+    display: flex;
+}
+
+
+form {
+    --formulier-color:white;
+	
+    max-width:20em;
+	margin-top:var(--white);
+	padding:var(--white);
+   
+}
+
+label {
+	display:block; 
+    margin-bottom: .75em;
+}
+
+input {
+    --omlijning-color: rgb(187, 187, 187);
+
+	border-style:solid;
+	border-width:0.075em;
+	border-color:var(--omlijning-color);
+	
+}
+
+input[type="email"], 
+input[type="number"] {
+	width:100%;
+	appearance:none;
+}
+
+button {
+    --KnopAchtergrond-color: rgb(187, 187, 187);
+   
+    padding: 1em;
+    width:100%;
+    border: none;
+    border-radius: 0.75em;
+}

@@ -123,6 +123,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  
  <strong>Wat er goed ging</strong><br>
   -Wat goed ging was het oefenen met Grid en Flexbox. Ik merk wel dat ik met Grid nog iets meer moeite heb omdat wij dit vorig jaar nog niet gehad hadden. De oefen oefeningen van Flexbox gingen mij goed af. <br>
+  -Ook ging het mij goed af om een lettertype toe te voegen aan mijn CSS.<br>
   
   <img src="readme-images/grid_garden.jpg" width="175px" alt="scherm afbeelding van het eindscherm van grid garden, oefeningen gehaald!">
   
@@ -130,7 +131,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <br>
   
   <strong>Wat was er nog lastig</strong><br>
-  -De laatste oefening van Flexbox froggy vond ik erg lastig, hier kwam ik niet helemaal uit, zie de foto onder het kopje "Wat er goed ging".
+  -De laatste oefening van Flexbox froggy vond ik erg lastig, hier kwam ik niet helemaal uit, zie de foto onder het kopje "Wat er goed ging".<br>
+  -Het aanroepen van elementen zonder classes od id's vind ik nog lastig. <br>
+  -Het plaatsen van een afbeelding achter tekst is mij nog niet gelukt na veel proberen, ik heb veel op internet gezocht naar uitleg, aan Chat GPT gevraagd en in mijn oude programmeer opdrachten gekeken.<br> 
+  <img src="readme-images/achtergrond_afbeelding_code.jpg" width="175px" alt="scherm afbeelding van de code waarin je kunt zien dat ik heb geprobeerd een achtergrond afbeelding toe te voegen "> <br>
+  
+  -Het juiste element aanroepen vind ik lastig, de parent en children. Hierdoor voeg ik denk ik niet altijd op de juiste onderdelen flexbox toe waardoor het niet lukt of ik mis onderdelen in mijn html waar ik dit juist op moet aanroepen.<br>
+   <img src="readme-images/html_flex.jpg" width="175px" alt="scherm afbeelding van de HTML code van mijn footer"> <br>
+   <img src="readme-images/flex_footer.jpg" width="175px" alt="scherm afbeelding van de CSS code van mijn footer"> <br>
    
   <strong>Inzichten toegankelijkheid</strong><br>
   Via deze manieren kan ik mijn website toegankelijker maken dan dat het nu is: <br>
@@ -148,11 +156,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Vraag 1        | Vraag 2            | Vraag 3      | Vraag 4               |
+  | ---            | ---                | ---          | ---                   |
+  | Achtergrond    | Rekening houden met| Meer uitleg  | Wat is een goede      |
+  | afbeelding     | grids? En wanneer  | over kleuren | planning om dit       |
+  | toevoegen met  | wel divs of classes| in variabelen| project aan te        |
+  | daaroverheen   | gebruiken?         | zetten       | houden zodat je alles |
+  | tekst/ button  |                    |              | op tijd af krijgt?    |
+
 
 
   ### Verslag van meeting

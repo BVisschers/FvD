@@ -1,21 +1,127 @@
 <!DOCTYPE html>
-<html lang="nl">
-	
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Howdy FED2425</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<meta charset="UTF-8" />
+	<meta name="author" content="Bente Visschers" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Frontend Development</title>
+
+	<link href="styles/style.css" rel="stylesheet" />
+	<link href="styles/style1.css" rel="stylesheet" />
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 </head>
 
 <body>
-	<h1>Howdy FED2425</h1>
+	<header>
+		<img src="images/logo_lounge.png" alt="Logo van Lounge Underwear" />
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" />Menu</button>
 
+		<nav>
+			<ul>
+				<li><a class="active" href="https://nl.lounge.com">Home</a></li>
+				<li><a href="https://nl.lounge.com/collections/all">Ontdek</a></li>
+				<li><a href="https://nl.lounge.com/collections/bras">Beha's</a></li>
+				<li><a href="https://nl.lounge.com/collections/thongs-briefs">Broekjes</a></li>
+				<li><a href="https://nl.lounge.com/collections/intimates">Intimates</a></li>
+				<li><a href="https://nl.lounge.com/collections/apparel">Kleding</a></li>
+				<li><a href="https://nl.lounge.com/collections/sleep">Slaap</a></li>
+				<li><a href="https://nl.lounge.com/collections/swim">Swim</a></li>
+				<li><a href="https://nl.lounge.com/collections/sale-all">Outlet</a></li>
+				<li><a href="http://127.0.0.1:5500/careers.html">Career</a></li>
+			</ul>
+
+			<ul>
+			<img aria-hidden="true" src="images/zoekicoon.png" alt="Icoon om te zoeken">
+			<img aria-hidden="true" src="images/hartje_icoon.png" alt="Hartje icoon om je favoriete items op te slaan">
+			<img aria-hidden="true" src="images/account_icoon.png" alt="Icoon voor het account">
+			<img aria-hidden="true" src="images/shopping_tas_icoon.png" alt="Winkelmandje icoon om je items te zien en of kopen">
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1>Sunday Club.</h1>
+			<a href="https://nl.lounge.com/collections/sunday-club">Discover More</a>
+		</section>
+
+		<img src="images/sunday_club.jpg" alt="Afbeelding van een mevrouw in een joggingpak" />
+
+		<section>
+			<a href="https://nl.lounge.com/collections/lingerie">Underwear</a>
+			<img src="images/underwear.jpg" alt="Afbeelding van een bruine lingerieset" />
+		</section>
+
+		<section>
+			<h2>AW24</h2>
+			<a href="https://nl.lounge.com/collections/aw-24">Discover More</a>
+			<img src="images/aw24.jpg" alt="Afbeelding van een mevrouw in nette kleding " />
+		</section>
+
+		<section>
+			<h2>BLACK FRIDAY</h2>
+			<h3>Shopping Event | Coming Soon</h3>
+
+			<form>
+				<label for="email">
+					E-mail address
+					<input type="email" id="email">
+				</label> 
+				
+				<label for="number">
+					Telephone number
+					<input type="number" id="telefoonnummer">
+				</label>
+		
+				<label for="news">
+					<input type="checkbox" id="nieuws" value="news">
+					Click to opt in to email and SMS marketing form Lounge.
+				</label>
+				
+				<button type="submit">Sign Up</button>
+			</form>
+			
+			<p>
+				We process your personal data as stated in our Privacy Policy. You may
+				withdraw your consent at any time by clicking te unsubscribe link at
+				the bottom of ant of our emails.
+			</p>
+			<img src="images/blackfriday.jpg" alt="Afbeelding van drie vrouwen in lingerie" />
+		</section>
+	</main>
+	<footer>
+		<section>
+			<p>
+				Sign up to be the first to hear about new products ans exlusive offers
+			</p>
+			<form>
+				<label for="email">
+					E-mail address
+					<input type="email" id="email">
+				</label> 
+			</form>
+			<a href="Help">Help</a>
+			<a href="Discover">Discover</a>
+			<img src="images/facebook_icoon.jpg" alt="Facebook icoon" />
+			<img src="images/twitter_icoon.jpg" alt="Twitter icoon" />
+			<img src="images/instagram_icoon.jpg" alt="Instagram icoon" />
+			<img src="images/youtube_icoon.jpg" alt="Youtube icoon" />
+			<img src="images/tiktok_icoon.jpg" alt="Tiktok icoon" />
+			<img src="images/linkedin_icoon.jpg" alt="Linkedin icoon" />
+			<img src="images/pinterest_icoon.jpg" alt="Pinterest icoon" />
+			<ul>
+				<li>Terms & Conditions</li>
+				<li>Privacy police</li>
+				<li>Coockie Policy</li>
+				<li>Modern Slavery</li>
+				<li>Accessibility Statement</li>
+				<li>Cookie Setting</li>
+			</ul>
+			<p>Copyright 2024 Lounge Underwear. All Rights Reserved.</p>
+		</section>
+	</footer>
 	<script defer src="scripts/script.js"></script>
 </body>
-	
+
 </html>
