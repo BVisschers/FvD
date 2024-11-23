@@ -167,12 +167,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  hier na afloop snel de uitkomsten van de meeting vastleggen. <br>
+  <strong>Tijdens deze meeting heb ik veel nieuwe dinge n geleerd, ik zal hieronder alle punten toelichten: </strong><br><br>
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+- Hoe je gemakkelijk met grid tekst bovenop een afbeelding zet.<br>
+<img src="readme-images/grid_uitgetekend.jpg" width="175px" alt="foto waarop een grid te zien is als die is uitgetekend met alle kolommen en rows"> <br>
+<img src="readme-images/achtergrondafbeelding.jpg" width="175px" alt="foto van de code hoe je de afbeelding als achtergrond gebruikt"> <br>
+- Alle fonts in een mapje ‘font’ zetten in je basiswebsite map. Hoofdletters mag als je het goed doet, gekke puntjes moet je wel weghalen.<br>
+<img src="readme-images/fonts_mapje.jpg" width="175px" alt="scherm afbeelding van het fonts mapje in mijn basiswebsite"> <br>
+- Via inspecteren en kenmerken kun je afbeeldingen en fonts downloaden en bekijken.<br>
+- Wanneer je een normaal en Italic font hebt, dan 2x een fontface opnemen in je css bestand en dan bij font-style de stijl veranderen naar Italic. Ook heb ik over font-face geleerd dat als je wilt testen of je het goed toegepast hebt, dat je dan bijvoorbeeld je naam kan invullen bij de font-family. Als het lettertype blijft staan heb je het goed gedaan.<br>
+<img src="readme-images/font_face.jpg" width="175px" alt="Code van hoe ik de font-face heb toegepast"> <br>
+- Mobiele weergave uitzetten bij inspecteren, anders ontwerp je maar voor een grootte van een device. <br>
+- Font-size: ..vw; Voor het meeschalen van tekst of afbeeldingen zodat het responsief is.<br>
+- Font-size:clamp(1.5e  7vw, 5em); zodat de tekst niet kleiner wordt dan 1.5em en niet groter dan 5em.<br>
+<img src="readme-images/clamp.jpg" width="175px" alt="scherm afbeelding van de code hoe clamp kan worden toegepast"> <br>
+- List maken van articles bijvoorbeeld voor een carrousel. (Flexbox gebruiken)<br>
+- li*3 betekent dat je op een snelle manier 3x een li hebt aangemaakt in je HTML = dat is emmet<br>
+- nav>ul>li*5>a = dat is emmet voor een navigatie met een ul en li, de li wordt 5x aangemaakt, en daarin komt 5x een "a" te staan.<br>
 
 </details>
 

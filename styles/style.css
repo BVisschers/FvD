@@ -1,8 +1,34 @@
+/***************/
+/* lettertypes */
+/***************/
+
+
 @font-face {
     font-family: 'Montserrat';
-    src: url('Montserrat-VariableFont_wght.ttf');
+    src: url('../fonts/Montserrat-Variable.ttf');
        
      font-style: normal;
+   }
+
+   @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic-Variable.ttf');
+       
+     font-style: italic;
+   }
+
+   @font-face {
+    font-family: 'Bente';
+    src: url('../fonts/BodoniModa-Variable.ttf');
+       
+     font-style: normal;
+   }
+
+   @font-face {
+    font-family: 'Bente';
+    src: url('../fonts/BodoniModa-Italic-Variable.ttf');
+       
+     font-style: italic;
    }
 
 * {
@@ -11,33 +37,73 @@
 	font-family:'Montserrat', sans-serif ;
 }
 
+/***************/
+/* header */
+/***************/
+
 header { 
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
+	padding:0 2em;
+	margin-top: 2em;
 	
 }
 
-header img {
-	width: 17%;
+
+
+header > img:first-of-type {
+    width: 8em; 
+    flex-shrink: 0;
 }
 
-nav {
-	order:-1;
-	position: absolute;
+header nav {
+	--nav-color:white;
+	background-color:var(--white);
+	position: fixed;
 	inset:0;
-	background-color: yellow;
-
-	transition:1s;
 	
-	translate: -98%;
+
+	transition:.3s;
+	translate: -100%;
   }
+
+header nav ul li a:hover {
+    text-decoration: underline;
+	text-decoration-thickness:.12em; 
+	text-underline-offset:.40em; 
+
+}
+
+header nav a.active {
+	font-weight:500;
+	
+  }
+
+
+  
+header ul:last-of-type {
+    display: flex;
+    gap: 1em; 
+    
+}
+
+header ul:last-of-type li img {
+    width: 1.2em;
+    height: auto;
+}
 
 /* als menu open is */
 nav.toonMenu {
 	translate: 0;
-		
-	}
+
+	--wit: #fff;
+	background-color: var(--wit);
+}
+
+
+
+
 
 
 /***************/
@@ -47,14 +113,18 @@ header button {
 	position:relative;
 	z-index: 1;
 	order:-1;
+
 	
   }
   
-
+header button img {
+	width: 2em;
+	height: 2em;
+	filter:invert()
+}
   nav.toonMenu button img {
 	/* bron kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
-   content:url("https://assets.codepen.io/274456/ui-icon-cross.svg") 
-	
+   content:url("https://assets.codepen.io/274456/ui-icon-cross.svg"); 
   }
   
   
@@ -72,6 +142,8 @@ header button {
 	header nav {
 		translate:unset;
 		position: static;
+		display: flex;
+		
 	}
 
 	header nav ul {
@@ -103,9 +175,19 @@ h1, h2, h3 {
 }
 
 a {
-	color: black;
+	--link-zwart: #000;
+	color: var(--link-zwart);
 }
 
+
+
+/**************/
+/* footer     */
+/**************/
+footer section:nth-of-type(1) img {
+    width: 15%; 
+    display: flex;
+}
 
 
 /**************/

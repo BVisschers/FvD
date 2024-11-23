@@ -9,7 +9,7 @@ console.log("hi");
 
 // stap 1: zoek de menu-button op en sla die op in een variabele
 const menuButton = document.querySelector("header > button"); 
-const deNav = document.querySelector("nav"); 
+const deNav = document.querySelector("header > nav"); 
 
 // stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
 menuButton.onclick = toggleMenu;
