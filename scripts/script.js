@@ -18,4 +18,5 @@ menuButton.onclick = toggleMenu;
 // stap 3: voeg in de functie een class toe aan de nav
 function toggleMenu (){
   deNav.classList.toggle("toonMenu");
+  menuButton.classList.toggle("toonMenu");
 }

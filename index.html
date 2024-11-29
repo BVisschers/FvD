@@ -17,24 +17,29 @@
 	<header>
 		<img src="images/logo_lounge.png" alt="Logo van Lounge Underwear" />
 		<button aria-hidden="true">
-			<img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" />Menu
+			<img src="images/menu.png" alt="" />Menu
 		</button>
 
 		<nav>
+			<form role="search" action="#">
+				<input type="search" name="search" id="zoeken" placeholder="Search for products" autocomplete="off"
+					aria-label="zoeken">
+
+			</form>
 			<ul>
 				<li><a class="active" href="https://nl.lounge.com">Home</a></li>
-				<li><a href="https://nl.lounge.com/collections/all">Ontdek</a></li>
-				<li><a href="https://nl.lounge.com/collections/bras">Beha's</a></li>
+				<li><a href="https://nl.lounge.com/collections/all">Discover</a></li>
+				<li><a href="https://nl.lounge.com/collections/bras">Bras</a></li>
 				<li>
-					<a href="https://nl.lounge.com/collections/thongs-briefs">Broekjes</a>
+					<a href="https://nl.lounge.com/collections/thongs-briefs">Bottoms</a>
 				</li>
 				<li>
 					<a href="https://nl.lounge.com/collections/intimates">Intimates</a>
 				</li>
 				<li>
-					<a href="https://nl.lounge.com/collections/apparel">Kleding</a>
+					<a href="https://nl.lounge.com/collections/apparel">Clothing</a>
 				</li>
-				<li><a href="https://nl.lounge.com/collections/sleep">Slaap</a></li>
+				<li><a href="https://nl.lounge.com/collections/sleep">Sleep</a></li>
 				<li><a href="https://nl.lounge.com/collections/swim">Swim</a></li>
 				<li>
 					<a href="https://nl.lounge.com/collections/sale-all">Outlet</a>
@@ -64,9 +69,10 @@
 		<section>
 			<h1>Sunday Club.</h1>
 			<a href="https://nl.lounge.com/collections/sunday-club">Discover More</a>
+			<img src="images/sunday_club.jpg" alt="Afbeelding van een mevrouw in een joggingpak" />
 		</section>
 
-		<img src="images/sunday_club.jpg" alt="Afbeelding van een mevrouw in een joggingpak" />
+
 
 		<section>
 			<a href="https://nl.lounge.com/collections/lingerie">Underwear</a>
@@ -112,33 +118,80 @@
 	</main>
 	<footer>
 		<section>
-			<p>
-				Sign up to be the first to hear about new products ans exlusive offers
-			</p>
-			<form>
-				<label for="email">
-					E-mail address
-					<input type="email" id="email" />
-				</label>
-			</form>
-			<a href="Help">Help</a>
-			<a href="Discover">Discover</a>
-			<img src="images/facebook_icoon.jpg" alt="Facebook icoon" />
-			<img src="images/twitter_icoon.jpg" alt="Twitter icoon" />
-			<img src="images/instagram_icoon.jpg" alt="Instagram icoon" />
-			<img src="images/youtube_icoon.jpg" alt="Youtube icoon" />
-			<img src="images/tiktok_icoon.jpg" alt="Tiktok icoon" />
-			<img src="images/linkedin_icoon.jpg" alt="Linkedin icoon" />
-			<img src="images/pinterest_icoon.jpg" alt="Pinterest icoon" />
-			<ul>
-				<li>Terms & Conditions</li>
-				<li>Privacy police</li>
-				<li>Coockie Policy</li>
-				<li>Modern Slavery</li>
-				<li>Accessibility Statement</li>
-				<li>Cookie Setting</li>
-			</ul>
-			<p>Copyright 2024 Lounge Underwear. All Rights Reserved.</p>
+			<section>
+				<p>
+					Sign up to be the first to hear about new products ans exlusive offers
+				</p>
+				<form>
+					<label for="email">
+						E-mail address
+						<input type="email" id="email" />
+					</label>
+				</form>
+			</section>
+
+			<section>
+				<details>
+					<summary>Help <img src="images/pijl_icoon.png" alt="pijl icoon"></summary>
+					<ul>
+						<li>Client Services</li>
+						<li>Make a Return/Exchange</li>
+						<li>Size Guide</li>
+						<li>Shipping & Returns</li>
+					</ul>
+				</details>
+
+				<details>
+					<summary>Discover <img src="images/pijl_icoon.png" alt="pijl icoon"></summary>
+					<ul>
+						<li>Our Story</li>
+						<li>Sustainability</li>
+						<li>Student Discount</li>
+						<li>Essential Worker Discount</li>
+						<li>The Lounge Foundation</li>
+					</ul>
+				</details>
+			</section>
+
+			<section>
+				<ul>
+					<li><img src="images/facebook_icoon.jpg" alt="Facebook icoon" /></li>
+					<li><img src="images/twitter_icoon.jpg" alt="Twitter icoon" /></li>
+					<li><img src="images/instagram_icoon.jpg" alt="Instagram icoon" /></li>
+					<li><img src="images/youtube_icoon.jpg" alt="Youtube icoon" /></li>
+					<li><img src="images/tiktok_icoon.jpg" alt="Tiktok icoon" /></li>
+					<li><img src="images/linkedin_icoon.jpg" alt="Linkedin icoon" /></li>
+					<li><img src="images/pinterest_icoon.jpg" alt="Pinterest icoon" /></li>
+				</ul>
+			</section>
+
+
+			<section>
+				<ul>
+					<li><a href="https://us.lounge.com/pages/terms-conditions">Terms & Conditions</a></li>
+					<li><a href="https://us.lounge.com/pages/privacy-policy">Privacy police</a></li>
+					<li><a href="https://us.lounge.com/pages/cookie-policy">Coockie Policy</a></li>
+					<li><a href="https://us.lounge.com/pages/modern-slavery-statement">Modern Slavery</a></li>
+					<li><a href="https://us.lounge.com/pages/accessibility-statement">Accessibility Statement</a></li>
+					<li><a href="https://us.lounge.com/pages/accessibility-statement">Cookie Setting</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<ul>
+					<li><img src="images/afterpay_icoon.jpg" alt="Afterpay icoon" /></li>
+					<li><img src="images/amex_icoon.jpg" alt="Amex icoon" /></li>
+					<li><img src="images/afterpay_icoon.jpg" alt="Apple Pay icoon" /></li>
+					<li><img src="images/klarna_icoon.jpg" alt="Klarna icoon" /></li>
+					<li><img src="images/mastercard_icoon.jpg" alt="Mastercard icoon" /></li>
+					<li><img src="images/paypal_icoon.jpg" alt="Paypal icoon" /></li>
+					<li><img src="images/visa_icoon.jpg" alt="Visa icoon" /></li>
+				</ul>
+			</section>
+
+			<section>
+				<p>Copyright 2024 Lounge Underwear. All Rights Reserved.</p>
+			</section>
 		</section>
 	</footer>
 	<script defer src="scripts/script.js"></script>

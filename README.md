@@ -195,20 +195,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Voortgang 2 (week 3)
 
 <details>
-  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary><br>
+    
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  
+  <strong>Wat er goed ging</strong><br>
+    - Het plaatsen van een afbeelding op de achtergrond ging erg goed. <br>
+    <img src="readme-images/achtergrond_afbeelding.png" width="175px" alt="achtergrond afbeelding toegepast in mijn website"> <br>
+    -De pijltjes die ik heb gemaakt in de summery heb ik vervangen voor eigen pijltjes die beter passen bij de vormgeving, ook heb ik hier :has gebruikt in Css. <br>
+    <img src="readme-images/summary.png" width="175px" alt="Pijltjes vervangen door eigen pijltjes, en aangepast met :has"> <br>
+    - Het plaatsen van het zoekveld in het dropdown menu ging mij goed af, en deze dan niet tonen als het menu breder is dan 54em. <br><br>
+    <img src="readme-images/menu_dropdown.png" width="175px" alt="afbeelding van het dropdownmenu"> <br>
+    <strong>Wat was er nog lastig</strong><br>
+    - Het menu icoon vervangen vond ik lastig, dit ga ik vrijdag in de les navragen. <br>
+    <img src="readme-images/menu_icoon.png" width="175px" alt="afbeelding van het menu icoon wat niet gelukt is te vervangen"> <br>
+    - Voor het maken van responsive website heb ik meer kennis nodig. <br>
+    -Het menu op desktopformaat in het midden centreren vind ik lastig. <br>
+    <img src="readme-images/menu_centreren.png" width="175px" alt="afbeelding van mijn menu wat niet gecentreerd is"> <br>
+    -De social iconen links uitlijnen is mij nog niet gelukt na veel proberen. <br>
+    <img src="readme-images/social_iconen.png" width="175px" alt="afbeelding van de uitlijnng van mijn social iconen"> <br>
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Menu icoon     | Margin gebruiken   | Website      | Uitlijnen iconen |
+  | verdwenen      | om onderdelen goed | responsive   |
+  | ...            | uit te lijnen      | maken        |                  |
 
 
   ### Verslag van meeting
