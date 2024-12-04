@@ -2,163 +2,314 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Bente Visschers" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8" />
+	<meta name="author" content="Bente Visschers" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Frontend Development</title>
+	<title>Lounge Underwear</title>
 
-    <link href="styles/style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+	<link href="styles/style.css" rel="stylesheet" />
+	<link href="styles/career.css" rel="stylesheet" />
+	<link rel="icon" type="image/svg+xml" href="images/favicon.jpg" />
 </head>
-
 <body>
-    <header>
+	<header>
 		<img src="images/logo_lounge.png" alt="Logo van Lounge Underwear" />
-		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" />Menu</button>
+		<button>
+			<img src="images/menu.png" alt="" />Menu
+		</button>
 
 		<nav>
+			<form role="search" action="#">
+				<input type="search" name="search" id="zoeken" placeholder="Search for products" autocomplete="off"
+					aria-label="zoeken">
+
+			</form>
 			<ul>
-				<li><a href="https://nl.lounge.com">Home</a></li>
-				<li><a href="https://nl.lounge.com/collections/all">Ontdek</a></li>
-				<li><a href="https://nl.lounge.com/collections/bras">Beha's</a></li>
-				<li><a href="https://nl.lounge.com/collections/thongs-briefs">Broekjes</a></li>
-				<li><a href="https://nl.lounge.com/collections/intimates">Intimates</a></li>
-				<li><a href="https://nl.lounge.com/collections/apparel">Kleding</a></li>
-				<li><a href="https://nl.lounge.com/collections/sleep">Slaap</a></li>
+				<li><a class="active" href="http://127.0.0.1:5500/index.html?">Home</a></li>
+				<li><a href="https://nl.lounge.com/collections/all">Discover</a></li>
+				<li><a href="https://nl.lounge.com/collections/bras">Bras</a></li>
+				<li>
+					<a href="https://nl.lounge.com/collections/thongs-briefs">Bottoms</a>
+				</li>
+				<li>
+					<a href="https://nl.lounge.com/collections/intimates">Intimates</a>
+				</li>
+				<li>
+					<a href="https://nl.lounge.com/collections/apparel">Clothing</a>
+				</li>
+				<li><a href="https://nl.lounge.com/collections/sleep">Sleep</a></li>
 				<li><a href="https://nl.lounge.com/collections/swim">Swim</a></li>
-				<li><a href="https://nl.lounge.com/collections/sale-all">Outlet</a></li>
-				<li><a class="active" href="http://127.0.0.1:5500/careers.html">Career</a></li>
+				<li>
+					<a href="https://nl.lounge.com/collections/sale-all">Outlet</a>
+				</li>
+				<li><a href="http://127.0.0.1:5500/careers.html">Career</a></li>
 			</ul>
 
 			<ul>
-			<img aria-hidden="true" src="images/zoekicoon.png" alt="Icoon om te zoeken">
-			<img aria-hidden="true" src="images/hartje_icoon.png" alt="Hartje icoon om je favoriete items op te slaan">
-			<img aria-hidden="true" src="images/account_icoon.png" alt="Icoon voor het account">
-			<img aria-hidden="true" src="images/shopping_tas_icoon.png" alt="Winkelmandje icoon om je items te zien en of kopen">
+				<li>
+					<img aria-hidden="true" src="images/zoekicoon.png" alt="Icoon om te zoeken" />
+				</li>
+				<li>
+					<img aria-hidden="true" src="images/hartje_icoon.png"
+						alt="Hartje icoon om je favoriete items op te slaan" />
+				</li>
+				<li>
+					<img aria-hidden="true" src="images/account_icoon.png" alt="Icoon voor het account" />
+				</li>
+				<li>
+					<img aria-hidden="true" src="images/shopping_tas_icoon.png"
+						alt="Winkelmandje icoon om je items te zien en of kopen" />
+				</li>
 			</ul>
 		</nav>
 	</header>
-    <main>
-        <section>
-            <h1>CAREERS</h1>
-            <p>
-                Lounge HOME is a space where ideas come to life every day and Sunday
-                scaries don't exist - and it's all thank to our incredible people. We
-                wouldn't be able to create an inclusive, inspired global community if
-                we didn't have the same workplace culture. It all starts at HOME.
-            </p>
-            <button>AVAILABLE ROLES</button>
-            <button>PLAY VIDEO</button>
-            <img src="images/careers_computer.jpg"
-                alt="Afbeelding van twee vrouwen achter een computer dat ze aan het werk zijn, ze kijken naar lingeriesets" />
-            <img src="images/careers_scherm_meekijken.jpg"
-                alt="Afbeelding van drie vrouwen achter een computer die aan het overleggen zijn" />
-            <img src="images/careers_wijzen_scherm.jpg"
-                alt="Afbeelding van twee vrouwen die aan het werk zijn achter hun laptop en met elkaar overleggen." />
-            <h2>Join Us: Inclusivity Starts with Your Application</h2>
-            <p>
-                As an Equal Opportunities Employer, we're committed to treating all
-                prospective Loungers fairly and equally during the interview process.
-                We're always more than happy to make reasonable adjustments for
-                candidates with specific needs or disabilities in any stage of the
-                recruitment process. If you've applied for a role with us and you'd
-                like to request a reasonable adjustment for an interview to task,
-                please inform our Talent Team before your interview.
-            </p>
-        </section>
+	<main>
+		<div></div>
+		<section>
+			<h1 class="visually_hidden">Start Your Career at Lounge Underwear</h1>
+			<h2>CAREERS</h2>
+			<p>
+				Lounge HOME is a space where ideas come to life every day and Sunday
+				scaries don't exist - and it's all thank to our incredible people. We
+				wouldn't be able to create an inclusive, inspired global community if
+				we didn't have the same workplace culture. It all starts at HOME.
+			</p>
+			<button>AVAILABLE ROLES</button>
+			<button>PLAY VIDEO</button>
+		</section>
 
-        <section>
-            <h2>OUR VALUES.</h2>
-            <h3>Empower Women.</h3>
-            <p>
-                Everything we do is to leave a positive impact and forward our brand
-                mission of empowering women to feel sexy and comfortable in everything
-                that they are.
-            </p>
-            <img src="images/gesprek_career.jpg" alt="Afbeelding van een gezellig gesprek tussen twee werknemers." />
-        </section>
+		<section>
+			<h2 class="visually_hidden">Afbeeldingen team van Lounge</h2>
+			<ul>
+				<li><img src="images/careers_computer.jpg"
+						alt="Afbeelding van twee vrouwen achter een computer dat ze aan het werk zijn, ze kijken naar lingeriesets" />
+				</li>
+				<li><img src="images/careers_scherm_meekijken.jpg"
+						alt="Afbeelding van drie vrouwen achter een computer die aan het overleggen zijn" /></li>
+				<li> <img src="images/careers_wijzen_scherm.jpg"
+						alt="Afbeelding van twee vrouwen die aan het werk zijn achter hun laptop en met elkaar overleggen." />
+				</li>
+			</ul>
+		</section>
 
-        <section>
-            <h2>Featured Roles</h2>
-            <a href="https://nl.lounge.com/pages/our-story">View All</a>
-            <p>
-                We update our vacancies regularly - so if you don't see your dream
-                role here today, make sure to check back soon. Psst - there's more.
-                Just click "View All".
-            </p>
+		<section>
+			<h2>Join Us: Inclusivity Starts with Your Application</h2>
+			<p>
+				As an Equal Opportunities Employer, we're committed to treating all
+				prospective Loungers fairly and equally during the interview process.
+				We're always more than happy to make reasonable adjustments for
+				candidates with specific needs or disabilities in any stage of the
+				recruitment process. If you've applied for a role with us and you'd
+				like to request a reasonable adjustment for an interview to task,
+				please inform our Talent Team before your interview.
+			</p>
+		</section>
 
-            <section>
-                <h3>Senior Frontend Engineer</h3>
-                <button>Developer</button>
-            </section>
+		<section>
+			<h2>OUR VALUES.</h2>
+			<h3>Empower Women.</h3>
+			<p>
+				Everything we do is to leave a positive impact and forward our brand
+				mission of empowering women to feel sexy and comfortable in everything
+				that they are.
+			</p>
+			<div>
+				<form action="">
+					<label>
+						<input type="radio" name="radio" value="foto1"><span>1</span>
+					</label>
+					<label>
+						<input type="radio" name="radio" value="foto2"><span>1</span>
+					</label>
+					<label>
+						<input type="radio" name="radio" value="foto3"><span>1</span>
+					</label>
+					<label>
+						<input type="radio" name="radio" value="foto4"><span>1</span>
+					</label>
+				</form>
 
-            <section>
-                <h3>Merchandiser</h3>
-                <button>Merchandising</button>
-            </section>
+				<img src="images/gesprek_career.jpg" alt="foto1" />
+				<img src="images/kantoor_career.jpg" alt="foto2" />
+				<img src="images/meeting_career.jpg" alt="foto3" />
+				<img src="images/werken_career.jpg" alt="foto4" />
+			</div>
+		</section>
 
-            <section>
-                <h3>Photographer/Artworker</h3>
-                <button>Design</button>
-            </section>
+		<section>
+			<h2 class="visually_hidden">Work by</h2>
+			<section>
+				<h2 class="visually_hidden">Roles by Lounge</h2>
+				<section>
+					<h2>Featured Roles</h2>
+					<a href="https://nl.lounge.com/pages/our-story">View All</a>
+				</section>
+				<article>
+					<p>
+						We update our vacancies regularly - so if you don't see your dream
+						role here today, make sure to check back soon. Psst - there's more.
+						Just click "View All".
+					</p>
+				</article>
+			</section>
 
-            <section>
-                <h3>Heead of CRM (MAT Cover)</h3>
-                <button>Digital</button>
-            </section>
-        </section>
+			<article>
+				<ul>
+					<li>
+						<h3>Senior Frontend Engineer</h3>
+						<button>Developer</button>
+					</li>
+					<li>
+						<h3>Merchandiser</h3>
+						<button>Merchandising</button>
+					</li>
+					<li>
+						<h3>Photographer/Artworker</h3>
+						<button>Design</button>
+					</li>
+					<li>
+						<h3>Head of CRM (MAT Cover)</h3>
+						<button>Digital</button>
+					</li>
+				</ul>
+			</article>
+		</section>
 
-        <section>
-            <h2>Any questions? Check out our FAQs</h2>
-            <section>
-                <h3>When will i hear back from my interview</h3>
-                <button>-</button>
-            </section>
-            <section>
-                <h3>Can I apply for more than one role simultaneously</h3>
-                <button>-</button>
-            </section>
-            <section>
-                <h3>What should I wear to my interview?</h3>
-                <button>-</button>
-            </section>
+		<section>
+			<h2>Any questions? Check out our FAQs</h2>
+			<details>
+				<summary>Any questions? Check out our FAQs <img src="images/pijltje_summary.png" alt="pijl icoon"></summary>
+				<p>Thank you for your interview. We typically reach out within one to two weeks to update you on the next steps. If you don't hear from us by then, please feel free to follow up via email at work.bylounge@icloud.com. We appreciate your patience and interest in the role!</p>
+			</details>
 
-            <p>
-                For any other questions feel free to contact us -
-                <a href="careers@lounge.com">careers@lounge.com</a>
-            </p>
-        </section>
-    </main>
-    <footer>
-        <section>
-            <p>
-                Sign up to be the first to hear about new products ans exlusive offers
-            </p>
-            <form>
-                <label>email <input type="email" name="Email adress" required /></label>
-            </form>
-            <a href="Help">Help</a>
-            <a href="Discover">Discover</a>
-            <img src="images/facebook_icoon.jpg" alt="Facebook icoon" />
-            <img src="images/twitter_icoon.jpg" alt="Twitter icoon" />
-            <img src="images/instagram_icoon.jpg" alt="Instagram icoon" />
-            <img src="images/youtube_icoon.jpg" alt="Youtube icoon" />
-            <img src="images/tiktok_icoon.jpg" alt="Tiktok icoon" />
-            <img src="images/linkedin_icoon.jpg" alt="Linkedin icoon" />
-            <img src="images/pinterest_icoon.jpg" alt="Pinterest icoon" />
-            <ul>
-                <li>Terms & Conditions</li>
-                <li>Privacy police</li>
-                <li>Coockie Policy</li>
-                <li>Modern Slavery</li>
-                <li>Accessibility Statement</li>
-                <li>Cookie Setting</li>
-            </ul>
-            <p>Copyright 2024 Lounge Underwear. All Rights Reserved.</p>
-        </section>
-    </footer>
-    <script defer src="scripts/script.js"></script>
+			<details>
+				<summary>Can I apply for more than one role? <img src="images/pijltje_summary.png" alt="pijl icoon"></summary>
+				<p>Yes, you are welcome to apply for multiple roles at the same time. We encourage you to explore different opportunities that match your skills and interests. Our recruitment team will review each application individually.</p>
+			</details>
+
+			<details>
+				<summary>What should I wear to my interview?<img src="images/pijltje_summary.png" alt="pijl icoon"></summary>
+				<p>For your interview, we recommend dressing in a way that makes you feel confident and comfortable. While there’s no strict dress code, we suggest wearing smart, business-casual attire that reflects your professional style. It's important to feel at ease, as this will help you focus on showcasing your skills and personality.</p>
+			</details>
+
+			<p>
+				For any other questions feel free to contact us -
+				<a href="careers@lounge.com">careers@lounge.com</a>
+			</p>
+		</section>
+
+		<section>
+			<h4>Themes</h4>
+			<label>
+				<input type="radio" name="theme" value="pink" checked>  Pink Paradise
+			</label>
+			<label>
+				<input type="radio" name="theme" value="golden"> Golden Hour
+			</label>
+			<label>
+				<input type="radio" name="theme" value="kingsday"> Kingsday
+			</label>
+		</section>
+
+		<section>
+			<h4>Light & dark modus</h4>
+			<label>
+				<input type="radio" name="theme" value="auto" checked> Auto
+			</label>
+			<label>
+				<input type="radio" name="theme" value="light"> Licht
+			</label>
+			<label>
+				<input type="radio" name="theme" value="dark"> Donker
+			</label>
+		</section>
+	</main>
+	<footer>
+		<section>
+			<section>
+				<h2 class="visually_hidden">Sign up with email</h2>
+				<p>
+					Sign up to be the first to hear about new products ans exlusive offers
+				</p>
+				<form>
+					<label for="email2">
+						E-mail address
+						<input type="email" id="email2" />
+					</label>
+				</form>
+			</section>
+
+			<section>
+				<h2 class="visually_hidden">More information</h2>
+				<details>
+					<summary>Help <img src="images/pijl_icoon.png" alt="pijl icoon"></summary>
+					<ul>
+						<li>Client Services</li>
+						<li>Make a Return/Exchange</li>
+						<li>Size Guide</li>
+						<li>Shipping & Returns</li>
+					</ul>
+				</details>
+
+				<details>
+					<summary>Discover <img src="images/pijl_icoon.png" alt="pijl icoon"></summary>
+					<ul>
+						<li>Our Story</li>
+						<li>Sustainability</li>
+						<li>Student Discount</li>
+						<li>Essential Worker Discount</li>
+						<li>The Lounge Foundation</li>
+					</ul>
+				</details>
+			</section>
+
+			<section>
+				<h2 class="visually_hidden">Our Social Media</h2>
+				<ul>
+					<li><img src="images/facebook_icoon.png" alt="Facebook icoon" /></li>
+					<li><img src="images/twitter_icoon.png" alt="Twitter icoon" /></li>
+					<li><img src="images/instagram_icoon.png" alt="Instagram icoon" /></li>
+					<li><img src="images/youtube_icoon.png" alt="Youtube icoon" /></li>
+					<li><img src="images/tiktok_icoon.png" alt="Tiktok icoon" /></li>
+					<li><img src="images/linkedin_icoon.png" alt="Linkedin icoon" /></li>
+					<li><img src="images/pinterest_icoon.png" alt="Pinterest icoon" /></li>
+				</ul>
+			</section>
+
+
+			<section>
+				<h2 class="visually_hidden">Terms & Policies</h2>
+				<ul>
+					<li><a href="https://us.lounge.com/pages/terms-conditions">Terms & Conditions</a></li>
+					<li><a href="https://us.lounge.com/pages/privacy-policy">Privacy police</a></li>
+					<li><a href="https://us.lounge.com/pages/cookie-policy">Coockie Policy</a></li>
+					<li><a href="https://us.lounge.com/pages/modern-slavery-statement">Modern Slavery</a></li>
+					<li><a href="https://us.lounge.com/pages/accessibility-statement">Accessibility Statement</a></li>
+					<li><a href="https://us.lounge.com/pages/accessibility-statement">Cookie Setting</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="visually_hidden">Payment options</h2>
+				<ul>
+					<li><img src="images/afterpay_icoon.jpg" alt="Afterpay icoon" /></li>
+					<li><img src="images/amex_icoon.jpg" alt="Amex icoon" /></li>
+					<li><img src="images/afterpay_icoon.jpg" alt="Apple Pay icoon" /></li>
+					<li><img src="images/klarna_icoon.jpg" alt="Klarna icoon" /></li>
+					<li><img src="images/mastercard_icoon.jpg" alt="Mastercard icoon" /></li>
+					<li><img src="images/paypal_icoon.jpg" alt="Paypal icoon" /></li>
+					<li><img src="images/visa_icoon.jpg" alt="Visa icoon" /></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2 class="visually_hidden">Copyright</h2>
+				<p>Copyright 2024 Lounge Underwear. All Rights Reserved.</p>
+			</section>
+		</section>
+	</footer>
+	<script defer src="scripts/script.js"></script>
 </body>
 
 </html>
