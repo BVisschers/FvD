@@ -2,31 +2,73 @@
 /* lettertypes */
 /***************/
 
-h1 {
+
+main section:nth-of-type(1) h2 {
     font-family:'Bente', serif;
     font-size: 2em;
-    --wit: #fff;
 	color: var(--wit);
 }
 
 section:nth-of-type(3) h2 {
-    --wit: #fff;
 	color: var(--wit);
-
 }
 
 section:nth-of-type(4) h2 {
     font-family: 'Bente', serif;
     font-size: 2em;
-    color: rgb(162, 16, 16);
+    color: var(--rood);
     margin-left: 1em;
     margin-top: 1em;
+}
+
+h3 {
+    font-weight: 400;
 }
 
 p, h3{
     margin-left: 2em;
     margin-right: 2em;
 }
+
+/***************/
+/* linkjes     */
+/***************/
+
+main a{
+    color: var(--wit);
+    text-decoration-thickness: 0.12em;
+    text-underline-offset: 0.4em;
+}
+
+main section:nth-of-type(1) a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.20em;
+    text-underline-offset: 0.5em;
+
+  }
+
+main section:nth-of-type(2) a:hover {
+    font-weight: bold;
+}
+
+main section:nth-of-type(3) a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.20em;
+    text-underline-offset: 0.5em;
+
+}
+
+a:focus-visible {
+    border-style: dotted;
+    border-width: .2em;
+    border-color: var(--zwart); 
+}
+  
+main a.active {
+    font-weight: 500;
+  }
+
+
 
 
 /**************************/
@@ -41,7 +83,7 @@ main section:first-of-type {
     align-items: center;
 }
 
-main section h1 {
+main section h2 {
     grid-row-start: 2;
     grid-column-start: 1;;
 
@@ -53,10 +95,6 @@ main section:first-of-type a {
     grid-column-start: 1;
     margin-top: 6em;
     padding-bottom:3em;
-    --wit: #fff;
-	color: var(--wit);
-    text-decoration-thickness: 0.12em;
-  text-underline-offset: 0.4em;
 
     z-index: 1;
 }
@@ -76,7 +114,7 @@ main > section:first-of-type img {
 section:nth-of-type(2) {
     display: grid; 
     grid-template-rows: 1fr max-content;
-    justify-items:auto;
+    /* justify-items:auto; */
  }
  
  
@@ -87,8 +125,6 @@ section:nth-of-type(2) {
      padding-bottom: 2em;
      padding-left: 2em;
      font-size: 1.7em;
-     --wit: #fff;
-	color: var(--wit);
  
      z-index: 1;
  }
@@ -106,7 +142,7 @@ section:nth-of-type(2) {
 /* achtergrondafbeeding 3 */
 /**************************/
 
-section:nth-of-type(3) {
+main section:nth-of-type(3) {
     display: grid; 
     grid-template-rows: 1fr max-content;
     justify-items: center;
@@ -126,10 +162,6 @@ section:nth-of-type(3) {
      grid-column-start: 1;
      margin-top: 6em;
      padding-bottom: 3em;
-     --wit: #fff;
-	color: var(--wit);
-    text-decoration-thickness: 0.12em;
-  text-underline-offset: 0.4em;
  
      z-index: 1;
  }
@@ -177,41 +209,31 @@ main label {
     margin-left: 2em; 
 }
 
-main input {
-    --omlijning-color: rgb(187, 187, 187);
-
+main  :first-of-type[type="email"],
+main  :first-of-type[type="number"]{
 	border-style:solid;
 	border-width:0.075em;
-	border-color:var(--omlijning-color);
+	border-color:var(--grijs);
 	height: 4em;
     border-radius: .75em;
     margin-top: .5em;
-    margin-right: 2em;
+
+    width:100%;
+	appearance:none;
+   
 }
 
 main input:focus {
-    --zwart: #000;
     border-color: var(--zwart); 
 }
 
-
-
-main input[type="email"], 
-main input[type="number"] {
-	width:100%;
-	appearance:none;
-}
-
 input[type="checkbox"] {
-	margin-top: -1em;
-    margin-bottom: 1em;
-    display: flex;
-    flex-direction: row;
+	margin-top: 1em;
 }
 
 
 main button {
-    background-color: lightgrey;
+    background-color: var(--grijs);;
     font-family: "Montserrat";
    
     padding: 1em;
@@ -224,4 +246,18 @@ main button {
     margin-bottom: 2em;
     margin-left: 2em;
     margin-right: 2em;
+}
+
+button:hover{
+    background-color: var(--lichtGrijs);
+}
+
+/************************/
+/* video                */
+/************************/
+
+main video{
+    margin-top: 3em;
+    width: 100%;
+    height: 100%;
 }

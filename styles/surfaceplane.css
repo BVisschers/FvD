@@ -1,0 +1,155 @@
+/**************************/
+/* licht en donkere modus */
+/**************************/
+main>section:last-of-type {
+    margin-top: 1em;
+}
+
+
+
+
+/****************/
+/* Thema  pink  */
+/****************/
+/* 
+:has(input[type="radio"][value="pink"]:checked) h1,
+:has(input[type="radio"][value="pink"]:checked) h2,
+:has(input[type="radio"][value="pink"]:checked) h3,
+:has(input[type="radio"][value="pink"]:checked) h4 {
+    color: rgb(206, 87, 106);
+}
+
+:has(input[type="radio"][value="pink"]:checked) main>div:nth-of-type(1){
+    background-color:rgb(206, 87, 106);
+}
+
+:has(input[type="radio"][value="pink"]:checked) a {
+    color: rgb(255, 147, 165);
+}
+
+:has(input[type="radio"][value="pink"]:checked) form button {
+    background-color: rgb(181, 89, 104);
+    color: white;
+}
+
+:has(input[type="radio"][value="pink"]:checked) form button:hover {
+    background-color: rgb(235, 156, 169);
+    color: rgb(197, 47, 72);
+}
+
+:has(input[type="radio"]:checked[value="pink"]) input {
+    accent-color: rgb(255, 147, 165);
+}
+ */
+
+/****************/
+/* Thema  gold  */
+/****************/
+/* 
+:has(input[type="radio"][value="golden"]:checked) h1,
+:has(input[type="radio"][value="golden"]:checked) h2,
+:has(input[type="radio"][value="golden"]:checked) h3,
+:has(input[type="radio"][value="golden"]:checked) h4 {
+    color: #C1A057;
+}
+
+:has(input[type="radio"][value="golden"]:checked) main>div:nth-of-type(1){
+    background-color: #C1A057;
+}
+
+:has(input[type="radio"][value="golden"]:checked) a {
+    color: #bda776;
+}
+
+:has(input[type="radio"][value="golden"]:checked) form button {
+    background-color: #b39043;
+    color: white;
+}
+
+:has(input[type="radio"][value="golden"]:checked) form button:hover {
+    background-color: #c6b797;
+    color: #9c7829;
+}
+
+:has(input[type="radio"]:checked[value="golden"]) input {
+    accent-color: #b39043;
+} */
+
+/********************/
+/* Thema kingsday   */
+/* ******************
+:has(input[type="radio"][value="kingsday"]:checked) h1,
+:has(input[type="radio"][value="kingsday"]:checked) h2,
+:has(input[type="radio"][value="kingsday"]:checked) h3,
+:has(input[type="radio"][value="kingsday"]:checked) h4 {
+
+    color: orangered;
+
+}
+
+:has(input[type="radio"][value="kingsday"]:checked) main>div:nth-of-type(1){
+    background-color: orangered;
+}
+
+:has(input[type="radio"][value="kingsday"]:checked) a {
+    color: orange;
+}
+
+:has(input[type="radio"][value="kingsday"]:checked) form button {
+    background-color: rgb(233, 152, 0);
+    color: rgb(157, 42, 0);
+}
+
+:has(input[type="radio"][value="kingsday"]:checked) form button:hover {
+    background-color: orangered;
+    color: rgb(255, 229, 181);
+}
+
+:has(input[type="radio"]:checked[value="kingsday"]) input {
+    accent-color: orange;
+}  */
+
+/***********************/
+/* scrol animatie fade */
+/***********************/
+/* 
+main>div:nth-of-type(1) {
+    position: fixed;
+    inset: 0;
+    height: 0.5em;
+    background-color: var(--rood);
+    z-index: 3;
+}  */
+
+
+/****************/
+/* Laad animatie*/
+/****************/
+/* main>div:last-of-type {
+    height: 4em;
+    width: 4em;
+    border: .4em dotted;
+    border-color: var(--zwart) transparent var(--zwart) transparent;
+    border-radius: 50%;
+    animation: spin 1.25s linear infinite;
+
+    position: fixed;
+    top: 50%;
+    left: 45%;
+}
+
+@keyframes spin {
+    0% {
+        scale: 0;
+    }
+
+    50% {
+        scale: 1;
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 0;
+    }
+} */

@@ -6,17 +6,17 @@
 	<meta name="author" content="Bente Visschers" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>Frontend Development</title>
+	<title>Lounge Underwear</title>
 
 	<link href="styles/style.css" rel="stylesheet" />
 	<link href="styles/homepage.css" rel="stylesheet" />
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+	<link rel="stylesheet" href="styles/surfaceplane.css">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.jpg" />
 </head>
-
 <body>
 	<header>
 		<img src="images/logo_lounge.png" alt="Logo van Lounge Underwear" />
-		<button aria-hidden="true">
+		<button>
 			<img src="images/menu.png" alt="" />Menu
 		</button>
 
@@ -27,7 +27,7 @@
 
 			</form>
 			<ul>
-				<li><a class="active" href="https://nl.lounge.com">Home</a></li>
+				<li><a class="active" href="http://127.0.0.1:5500/index.html?">Home</a></li>
 				<li><a href="https://nl.lounge.com/collections/all">Discover</a></li>
 				<li><a href="https://nl.lounge.com/collections/bras">Bras</a></li>
 				<li>
@@ -59,15 +59,28 @@
 					<img aria-hidden="true" src="images/account_icoon.png" alt="Icoon voor het account" />
 				</li>
 				<li>
-					<img aria-hidden="true" src="images/shopping_tas_icoon.png"
-						alt="Winkelmandje icoon om je items te zien en of kopen" />
+					<button><img aria-hidden="true" src="images/shopping_tas_icoon.png"
+							alt="Winkelmandje icoon om je items te zien en of kopen" />Winkelmandje</button>
+						<dialog> <form method="dialog">
+							<h3>My bag</h3>
+							<button class="sluiten" aria-label="Sluit winkelwagen"> <img src="images/kruisje.png" alt="Icoon om menu te sluiten"> </button>
+							<p>Spend $100.00 more to qualify for free delivery</p>
+							<img src="images/pakketje_icoon.png" alt="Icoon van een pakketje">
+							<button type="submit">Shop all</button>
+						</form>
+						</dialog>
+
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<main>
+
+		<div></div>
+		
 		<section>
-			<h1>Sunday Club.</h1>
+			<h1 class="visually_hidden">Feel Confident and Comfortable in Lounge Underwear</h1>
+			<h2>Sunday Club.</h2>
 			<a href="https://nl.lounge.com/collections/sunday-club">Discover More</a>
 			<img src="images/sunday_club.jpg" alt="Afbeelding van een mevrouw in een joggingpak" />
 		</section>
@@ -75,6 +88,7 @@
 
 
 		<section>
+			<h2 class="visually_hidden">Shop underwear</h2>
 			<a href="https://nl.lounge.com/collections/lingerie">Underwear</a>
 			<img src="images/underwear.jpg" alt="Afbeelding van een bruine lingerieset" />
 		</section>
@@ -97,11 +111,11 @@
 
 				<label for="number">
 					Telephone number
-					<input type="number" id="telefoonnummer" />
+					<input type="number" id="number" />
 				</label>
 
 				<label for="news">
-					<input type="checkbox" id="nieuws" value="news" />
+					<input type="checkbox" id="news" value="news" />
 					Click to opt in to email and SMS marketing form Lounge.
 				</label>
 
@@ -115,22 +129,61 @@
 			</p>
 			<img src="images/blackfriday.jpg" alt="Afbeelding van drie vrouwen in lingerie" />
 		</section>
+		<section>
+			<!-- <h2 class="visually_hidden">Video bekijken</h2>
+			<video controls>
+				<source src="images/binkies_stoffen_avonturen_.mp4" type="video/mp4">
+				Your browser doesn't support the video element.
+			  </video> -->
+		</section>
+
+		<section>
+			<h4>Themes</h4>
+			<label>
+				<input type="radio" name="theme" value="pink" checked>  Pink Paradise
+			</label>
+			<label>
+				<input type="radio" name="theme" value="golden"> Golden Hour
+			</label>
+			<label>
+				<input type="radio" name="theme" value="kingsday"> Kingsday
+			</label>
+		</section>
+
+		<section>
+			<h4>Light & dark modus</h4>
+			<label>
+				<input type="radio" name="theme" value="auto" checked> Auto
+			</label>
+			<label>
+				<input type="radio" name="theme" value="light"> Licht
+			</label>
+			<label>
+				<input type="radio" name="theme" value="dark"> Donker
+			</label>
+		</section>
+
+		<div></div> 
+
 	</main>
 	<footer>
 		<section>
+			<h2 class="visually_hidden">All footer information</h2>
 			<section>
+				<h2 class="visually_hidden">Sign up with email</h2>
 				<p>
 					Sign up to be the first to hear about new products ans exlusive offers
 				</p>
 				<form>
-					<label for="email">
+					<label for="email2">
 						E-mail address
-						<input type="email" id="email" />
+						<input type="email" id="email2" />
 					</label>
 				</form>
 			</section>
 
 			<section>
+				<h2 class="visually_hidden">More information</h2>
 				<details>
 					<summary>Help <img src="images/pijl_icoon.png" alt="pijl icoon"></summary>
 					<ul>
@@ -154,19 +207,21 @@
 			</section>
 
 			<section>
+				<h2 class="visually_hidden">Our Social Media</h2>
 				<ul>
-					<li><img src="images/facebook_icoon.jpg" alt="Facebook icoon" /></li>
-					<li><img src="images/twitter_icoon.jpg" alt="Twitter icoon" /></li>
-					<li><img src="images/instagram_icoon.jpg" alt="Instagram icoon" /></li>
-					<li><img src="images/youtube_icoon.jpg" alt="Youtube icoon" /></li>
-					<li><img src="images/tiktok_icoon.jpg" alt="Tiktok icoon" /></li>
-					<li><img src="images/linkedin_icoon.jpg" alt="Linkedin icoon" /></li>
-					<li><img src="images/pinterest_icoon.jpg" alt="Pinterest icoon" /></li>
+					<li><img src="images/facebook_icoon.png" alt="Facebook icoon" /></li>
+					<li><img src="images/twitter_icoon.png" alt="Twitter icoon" /></li>
+					<li><img src="images/instagram_icoon.png" alt="Instagram icoon" /></li>
+					<li><img src="images/youtube_icoon.png" alt="Youtube icoon" /></li>
+					<li><img src="images/tiktok_icoon.png" alt="Tiktok icoon" /></li>
+					<li><img src="images/linkedin_icoon.png" alt="Linkedin icoon" /></li>
+					<li><img src="images/pinterest_icoon.png" alt="Pinterest icoon" /></li>
 				</ul>
 			</section>
 
 
 			<section>
+				<h2 class="visually_hidden">Terms & Policies</h2>
 				<ul>
 					<li><a href="https://us.lounge.com/pages/terms-conditions">Terms & Conditions</a></li>
 					<li><a href="https://us.lounge.com/pages/privacy-policy">Privacy police</a></li>
@@ -178,6 +233,7 @@
 			</section>
 
 			<section>
+				<h2 class="visually_hidden">Payment options</h2>
 				<ul>
 					<li><img src="images/afterpay_icoon.jpg" alt="Afterpay icoon" /></li>
 					<li><img src="images/amex_icoon.jpg" alt="Amex icoon" /></li>
@@ -190,6 +246,7 @@
 			</section>
 
 			<section>
+				<h2 class="visually_hidden">Copyright</h2>
 				<p>Copyright 2024 Lounge Underwear. All Rights Reserved.</p>
 			</section>
 		</section>

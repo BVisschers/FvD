@@ -230,11 +230,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+- ../ voor de link als je een image wilt linken, dan wordt het beter gevonden door Github. <br>
 
+- Grid uitzetten in het menu omdat dan alles automatisch gecentreerd is. <br>
+
+- Doordat ik in mijn eerdere code niet een section specifiek genoeg had aangeroepen (met main ervoor), pakte hij ook de derde section in mijn footer. Hierdoor kon ik mijn social iconen niet goed stijlen. <br>
+
+- H1 Sunday Club is geen goede H1, het zegt niets over de webpagina zelf. Om dit te verbeteren kan ik een H1 toevoegen en deze op Hidden zetten met de code die in teams staat. Van de H1 Sunday Club maak ik een H2.<br>
+
+- Ik dacht eerst dat als je Surface plane deed dat je alsnog de website responsive moest maken voor mobiel en desktop, dit hoeft gelukkig niet.<br>
 </details>
 
 
