@@ -266,6 +266,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <strong>Wat er goed ging</strong><br>
+  - Het maken van de tweede pagina ging beter en sneller dan verwacht, ik liep minder vaak vast.<br>
+  - Het maken van de laadanimatie was goed gelukt.<br>
+  <img src="readme-images/laad_icoon.png" width="175px" alt="scherm afbeelding van mijn gemaakte laadicoon"> <br>
+  - Het instellen van de verschillende states voor bijvoorbeeld de screenreader ging mij goed af. <br>
+  - Ook het maken van de summary/ detail ging nu beter en sneller dan de eerste keer. <br>
+   <img src="readme-images/summary_goed.png" width="175px" alt="scherm afbeelding van mijn summary"> <br>
+  - Het maken van de scroll met afbeeldingen ging ook erg goed! <br>
+   <img src="readme-images/scroll_afbeeldingen.png" width="175px" alt="scherm afbeelding van mijn scroll afbeeldingen"> <br>
+   <strong>Wat was er nog lastig</strong><br>
+   - Ik had een scroll animatie gemaakt, deze werkte eerst perfect, nadat ik de nav heb aangepast werkt die nu niet meer.<br>
+   - Ik zou graag mijn afbeeldingen een beetje responsive willen maken, maar dit is nog niet gelukt.<br>
+   - Ik krijg op de career pagina het niet voor elkaar om de Themes en Light en dark mode onderdelen onder elkaar te zetten. <br>
+    <img src="readme-images/themes.png" width="175px" alt="scherm afbeelding van het onderdeel themes en light & dark mode"> <br>
+   - Het maken van de dialog voor winkelwagen vond ik erg lastig. Het deed niet wat ik wilde in eerste instantie, nu is het wel gelukt. <br>
+    <img src="readme-images/winkelwagen.png" width="175px" alt="scherm afbeelding van het winkelwagen"> <br>
+  
+  
 
 
   ### Agenda voor meeting
@@ -273,9 +291,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Scoll animatie | Hoe grid naast     | Hoe grid     | Light & dark en  |
+  | verdwenen      | elkaar plaatsen?   | responsive   | Themes recht     |
+  |                |                    | maken        | onder elkaar zetten|
 
 
   ### Verslag van meeting
