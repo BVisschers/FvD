@@ -1,3 +1,8 @@
+
+
+
+
+
 /**************************/
 /* licht en donkere modus */
 /**************************/
@@ -7,11 +12,10 @@ main>section:last-of-type {
 
 
 
-
 /****************/
 /* Thema  pink  */
 /****************/
-/* 
+
 :has(input[type="radio"][value="pink"]:checked) h1,
 :has(input[type="radio"][value="pink"]:checked) h2,
 :has(input[type="radio"][value="pink"]:checked) h3,
@@ -40,12 +44,12 @@ main>section:last-of-type {
 :has(input[type="radio"]:checked[value="pink"]) input {
     accent-color: rgb(255, 147, 165);
 }
- */
+ 
 
 /****************/
 /* Thema  gold  */
 /****************/
-/* 
+
 :has(input[type="radio"][value="golden"]:checked) h1,
 :has(input[type="radio"][value="golden"]:checked) h2,
 :has(input[type="radio"][value="golden"]:checked) h3,
@@ -73,11 +77,11 @@ main>section:last-of-type {
 
 :has(input[type="radio"]:checked[value="golden"]) input {
     accent-color: #b39043;
-} */
+} 
 
 /********************/
 /* Thema kingsday   */
-/* ******************
+/* ******************/
 :has(input[type="radio"][value="kingsday"]:checked) h1,
 :has(input[type="radio"][value="kingsday"]:checked) h2,
 :has(input[type="radio"][value="kingsday"]:checked) h3,
@@ -112,20 +116,22 @@ main>section:last-of-type {
 /***********************/
 /* scrol animatie fade */
 /***********************/
-/* 
+ 
 main>div:nth-of-type(1) {
     position: fixed;
     inset: 0;
     height: 0.5em;
     background-color: var(--rood);
-    z-index: 3;
-}  */
+    z-index: 1000000;
+
+} 
 
 
 /****************/
 /* Laad animatie*/
 /****************/
-/* main>div:last-of-type {
+
+main>div:last-of-type {
     height: 4em;
     width: 4em;
     border: .4em dotted;
@@ -152,4 +158,4 @@ main>div:nth-of-type(1) {
         transform: rotate(360deg);
         scale: 0;
     }
-} */
+}

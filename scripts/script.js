@@ -21,38 +21,15 @@ function toggleMenu (){
 /* winkelmandje */
 /****************************************/
 
-const winkelwagenButton = document.querySelector("nav ul:nth-of-type(2) button:nth-of-type(1)");
+const winkelwagenButton = document.querySelector("header > button:nth-of-type(2)");
 
 
-const winkelwagenDialog = document.querySelector("nav ul:nth-of-type(2) dialog");
+const winkelwagenDialog = document.querySelector("header dialog");
 
 
 winkelwagenButton.addEventListener("click", () => {
   winkelwagenDialog.show();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -95,4 +72,56 @@ scrollDiv.animate(
     timeline: scrollenTijdlijn
   }
 );
+
+
+/****************************************/
+/* Inschrijven voor de emails           */
+/****************************************/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const checkboxLabel = document.getElementById("news");
+  const emailveld = document.getElementById("email");
+  const numberveld = document.getElementById("number");
+
+  checkboxLabel.addEventListener("click", () => {
+    if (checkboxLabel.checked) {
+
+      const email = emailveld.value.trim();
+      const number = numberveld.value.trim();
+
+      if (!email || !number) {
+        alert("Please enter your email address and phone number before subscribing to the newsletters.");
+        checkboxLabel.checked = false;
+      }
+    }
+  });
+});
+
+
+/****************************************/
+/* Audio video button career pagina     */
+/****************************************/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const videoButton = document.querySelector("section button:nth-of-type(2)");
+  const audioOpname = document.querySelector("section audio");
+
+
+  videoButton.addEventListener("click", () => {
+ 
+    if (audioOpname) {
+      audioOpname.play();
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
 

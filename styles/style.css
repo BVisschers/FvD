@@ -109,9 +109,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
-  margin-top: 2em;
+  padding: 2em 2em 0em 2em;
+
   z-index: 2;
+  position: fixed;
+  top: 0;
+  right:0;
+  left:0;
+  background-color: var(--wit);
 }
 
 header>img:first-of-type {
@@ -130,29 +135,26 @@ header nav {
   translate: 0 -100%;
 }
 
-header ul:last-of-type {
+/* header ul:last-of-type {
   display: flex;
   gap: 1em;
-}
+} */
 
 
-header ul:last-of-type li img {
+/* header ul:last-of-type li img {
   width: 1.2em;
   height: auto;
-}
+} */
 
 header nav ul li a {
   text-decoration: none;
+  color: var(--zwart);
 }
 
 header li {
   list-style: none;
 }
 
-
-header a {
-  color: var(--zwart);
-}
 
 header nav ul li a:hover {
   text-decoration: underline;
@@ -173,7 +175,6 @@ header nav a.active {
 header button {
   position: relative;
   z-index: 1;
-  order: -1;
   background: none;
   border: none;
 
@@ -186,6 +187,10 @@ header button {
   height: 4em;
 
   z-index: 3;
+}
+
+header button:nth-of-type(1) {
+  order: -1;
 }
 
 header button img {
@@ -206,6 +211,9 @@ nav.toonMenu {
   background-color: var(--wit);
   padding-top: 7em;
   z-index: 2;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
 }
 
 nav.toonMenu li {
@@ -213,22 +221,13 @@ nav.toonMenu li {
 }
 
 
-nav.toonMenu ul:last-of-type {
-  margin-top: 24em;
-}
-
-/* Winkelwagen icoon */
-nav.toonMenu li button img {
-  padding-bottom: 2em;
-}
-
 
 
 /*****************/
 /* Zoeken header */
 /*****************/
 
-header form {
+header nav form {
   display: flex;
   padding-bottom: 3em;
   max-width: 100%;
@@ -259,7 +258,7 @@ header form input {
 /* styling voor de header als de browser minimaal 54em breed is */
 /****************************************************************/
 @media (width > 54em) {
-  header button {
+  header button:nth-of-type(1){
     display: none;
   }
 
@@ -271,6 +270,7 @@ header form input {
 
   header nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 2em;
     padding-left: 3em;
   }
@@ -289,7 +289,7 @@ header form input {
 /*******************************************************************************/
 
 @media (width > 54em) {
-  header form {
+  header nav form {
     display: none;
   }
 }
@@ -298,29 +298,121 @@ header form input {
 /****************/
 /* Winkelmandje */
 /****************/
+dialog {
+  top: 0;
+  left: auto;
+  height: 100vh; 
+  border-style: none;
+  z-index: 10;
+  width: 80%;
+
+
+}
+
+
+
+dialog form{
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--wit);
+
+}
 
 dialog.show{
   background-color: var(--wit);
   color: var(--zwart);
+  z-index: 1000;
+
 }
 
-header dialog::backdrop{
-  background-color: rgba(255, 255, 255, 0.934);
-  backdrop-filter:blur(.5em);
+dialog h3{
+  padding-top: 3em;
+  font-weight: 400;
+
 }
+
+dialog section:nth-of-type(2) h4 {
+  font-weight: 400;
+}
+
 
 html:has(header dialog[open]) {
 	overflow:hidden;
 	scrollbar-gutter: stable;
 }
 
+
 dialog button.sluiten{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 3em;
+  right: 2em;
   width: 4em;
 
 }
+
+dialog section:nth-of-type(1){
+  margin-top: .5em;
+  background-color: var(--beige);
+
+  display: flex;
+  flex-direction: row-reverse;
+  
+  align-items: center; 
+  justify-content: start;
+  top: 4em;
+  padding: .7em 2em .7em 2em;
+}
+
+dialog section:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+
+}
+
+dialog section:nth-of-type(1) img{
+  width: 3em;
+  height: auto;
+
+}
+
+dialog section:nth-of-type(2) img{
+  order: -1;
+  width: 7em;
+}
+
+dialog button:last-of-type{
+  background-color: var(--zwart);
+  color: var(--wit);
+  border-radius: 1.075em;
+  width: 88%;
+  margin: 0em 2em 0em 2em;
+  bottom: 3em; 
+  margin-top: auto;
+  line-height: 4em;
+} 
+
+dialog button:last-of-type{
+  background-color: var(--zwart);
+  color: var(--wit);
+  border-radius: 1.075em;
+  width: 88%;
+  margin: 0em 2em 0em 2em;
+  bottom: 3em; 
+  margin-top: auto;
+  line-height: 4em;
+} 
+
+dialog button:last-of-type:hover{
+background-color: var(--grijs);
+} 
+
+
+
 
 /***************/
 /* Hidden      */
@@ -371,6 +463,8 @@ button:active {
 /****************************************************************/
 input:hover {
   border-color: var(--zwart);
+  transform: scale(1.01);
+  transition: .5s;
 }
 
 input:focus-visible {
@@ -425,11 +519,18 @@ footer details {
   margin-right: 2em;
   margin-left: 2em;
   margin-top: 1em;
+  list-style: none;
+}
+
+
+/* Voor safari list item weg */
+details summary::-webkit-details-marker {
+  display: none;
 }
 
 
 summary {
-  list-style: none;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
