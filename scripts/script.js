@@ -55,23 +55,23 @@ setTimeout(hideLoader, 2500);
 
 // Bron: https://medium.com/pengenpaham/build-simple-scrolltimeline-using-html-css-and-js-2617f03b5063
 
-const scrollDiv = document.querySelector("main>div:nth-of-type(1)");
+// const scrollDiv = document.querySelector("main>div:nth-of-type(1)");
 
-const scrollenTijdlijn = new ScrollTimeline({
-  source: document.scrollingElement,
-  orientation: "block",
-  scrollOffsets: [CSS.percent(0), CSS.percent(100)],
-});
+// const scrollenTijdlijn = new ScrollTimeline({
+//   source: document.scrollingElement,
+//   orientation: "block",
+//   scrollOffsets: [CSS.percent(0), CSS.percent(100)],
+// });
 
-scrollDiv.animate(
+// scrollDiv.animate(
   
-  {
-    transform: ["scaleX(0)", "scaleX(1)"],
-  },
-  {
-    timeline: scrollenTijdlijn
-  }
-);
+//   {
+//     transform: ["scaleX(0)", "scaleX(1)"],
+//   },
+//   {
+//     timeline: scrollenTijdlijn
+//   }
+// );
 
 
 /****************************************/
