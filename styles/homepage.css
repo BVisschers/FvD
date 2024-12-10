@@ -219,7 +219,7 @@ main :first-of-type[type="number"]:hover {
   border-color: var(--zwart);
 }
 
-main input:focus {
+main>input:focus {
   border-color: var(--zwart);
 }
 
