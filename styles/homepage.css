@@ -246,6 +246,11 @@ button:hover {
   background-color: var(--lichtGrijs);
 }
 
+button[data-state="signed-up"] {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 /****************/
 /* Feedback     */
 /****************/
