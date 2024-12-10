@@ -259,7 +259,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   • De koppen hebben een logische omschrijving. <br>
   • De footer wordt op een logische manier doorlopen. <br>
   • Als ik alle elementen langs wil gaan, wordt er niks overgeslagen, de alt van de afbeeldingen wordt ook netjes voorgelezen. <br>
-  <img src="readme-images/alt_voorlezen.png" width="175px" alt="afbeelding dat de alt wordt voorgelezen"> <br>
+  <img src="readme-images/alt_voorlezen.png" width="175px" alt="afbeelding dat de alt wordt voorgelezen"> <br><br>
+
+  <img src="readme-images/checklist1.png" width="175px" alt="checklist toegankelijkheid"> <br>
+  <img src="readme-images/checklist2.png" width="175px" alt="checklist toegankelijkheid"> <br>
+  <img src="readme-images/checklist3.png" width="175px" alt="checklist toegankelijkheid"> <br>
+  <img src="readme-images/checklist4.png" width="175px" alt="checklist toegankelijkheid"> <br>
+  <img src="readme-images/checklist5.png" width="175px" alt="checklist toegankelijkheid"> <br>
 
 </details>
 
@@ -326,17 +332,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/home_eindresultaat" width="375px" alt="uitomst opdracht 1 homepage">
-  <img src="readme-images/career_eindresultaat" width="375px" alt="uitomst opdracht 1 homepage">
+  <img src="readme-images/home_eindresultaat.png" width="375px" alt="uitomst opdracht 1 homepage">
+  <img src="readme-images/career_eindresultaat.png" width="375px" alt="uitomst opdracht 1 career">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Korte omschrijving met plaatjes<br>
   -Het uitwerken van de Themes met :has ging erg goed. Dit had ik nog niet eerder gebruikt, en dus veel over geleerd. Ik vond het erg leuk om toe te passen waardoor ik verschillende elementen heb toegevoegd binnen de :has.
 
   <img src="readme-images/themes_code.png" width="375px" alt="Code die ik heb geschreven bij de Themes van de website">
 
-  -Ik heb veel verschillende dingen geleerd wat betreft Javascript, zie de afbeeldingen hieronder wat ik geleerd heb.
+  -Ik heb veel verschillende dingen geleerd wat betreft Javascript, zie de afbeeldingen hieronder wat ik geleerd heb.<br>
   <img src="readme-images/themes_roze.png" width="375px" alt="Schermafbeelding van wat ik met Java script heb gemaakt als feedback op een interactie">
   <img src="readme-images/button_sign_up.png" width="375px" alt="Schermafbeelding van de code om de button kleur te veranderen na een klik">
   <img src="readme-images/scrollen_button.png" width="375px" alt="Schermafbeelding van de code om naar een kop te scrollen">
