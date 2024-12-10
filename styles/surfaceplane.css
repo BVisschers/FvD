@@ -1,32 +1,84 @@
-html {
-	scroll-timeline: --page-scroll block;
+/***********************/
+/* scrol animatie      */
+/***********************/
+/* Bron: Sanne  */
+
+main>div:nth-of-type(1) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: .5em;
+    background-color: var(--rood);
+    border-radius: 10%;
+    z-index: 100000000000000;
+    scale: 0 1;
+
+    animation-name: scrollLijn;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-timeline: scroll();
 }
+
+@keyframes scrollLijn {
+    100% {
+        scale: 1 1;
+    }
+}
+
+
+
+
+/****************/
+/* Laad animatie*/
+/****************/
+
+main>div:last-of-type {
+    height: 4em;
+    width: 4em;
+    border: .4em dotted;
+    border-color: var(--zwart) transparent var(--zwart) transparent;
+    border-radius: 50%;
+    
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+
+    position: fixed;
+    top: 40%;
+    left: 45%;
+}
+
+@keyframes spin {
+    0% {
+        scale: 0;
+    }
+
+    50% {
+        scale: 1;
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 0;
+    }
+}
+
+
 
 
 /**************************/
 /* Themes layout          */
 /**************************/
+
 main section:nth-of-type(5) label,
-main section:nth-of-type(7) label{
+main section:nth-of-type(7) label {
     display: block;
     margin-left: 2em;
     line-height: 1.75em;
-}
 
-
-
-/**************************/
-/* licht en donkere modus */
-/**************************/
-main>section:last-of-type {
-    margin-top: 1em;
-}
-
-main section:nth-of-type(6) label,
-main section:nth-of-type(8) label{
-    display: block;
-    margin-left: 2em;
-    line-height: 1.75em;
 }
 
 
@@ -43,8 +95,8 @@ main section:nth-of-type(8) label{
     color: rgb(206, 87, 106);
 }
 
-:has(input[type="radio"][value="pink"]:checked) main>div:nth-of-type(1){
-    background-color:rgb(206, 87, 106);
+:has(input[type="radio"][value="pink"]:checked) main>div:nth-of-type(1) {
+    background-color: rgb(206, 87, 106);
 }
 
 :has(input[type="radio"][value="pink"]:checked) a {
@@ -64,7 +116,9 @@ main section:nth-of-type(8) label{
 :has(input[type="radio"]:checked[value="pink"]) input {
     accent-color: rgb(255, 147, 165);
 }
- 
+
+
+
 
 /****************/
 /* Thema  gold  */
@@ -77,7 +131,7 @@ main section:nth-of-type(8) label{
     color: #C1A057;
 }
 
-:has(input[type="radio"][value="golden"]:checked) main>div:nth-of-type(1){
+:has(input[type="radio"][value="golden"]:checked) main>div:nth-of-type(1) {
     background-color: #C1A057;
 }
 
@@ -97,21 +151,24 @@ main section:nth-of-type(8) label{
 
 :has(input[type="radio"]:checked[value="golden"]) input {
     accent-color: #b39043;
-} 
+}
+
+
+
 
 /********************/
 /* Thema kingsday   */
 /* ******************/
+
 :has(input[type="radio"][value="kingsday"]:checked) h1,
 :has(input[type="radio"][value="kingsday"]:checked) h2,
 :has(input[type="radio"][value="kingsday"]:checked) h3,
 :has(input[type="radio"][value="kingsday"]:checked) h4 {
-
     color: orangered;
 
 }
 
-:has(input[type="radio"][value="kingsday"]:checked) main>div:nth-of-type(1){
+:has(input[type="radio"][value="kingsday"]:checked) main>div:nth-of-type(1) {
     background-color: orangered;
 }
 
@@ -131,74 +188,22 @@ main section:nth-of-type(8) label{
 
 :has(input[type="radio"]:checked[value="kingsday"]) input {
     accent-color: orange;
-}  */
-
-/***********************/
-/* scrol animatie fade */
-/***********************/
- 
-/* main>div:nth-of-type(1) {
-    position: fixed;
-    inset: 0;
-    height: 0.5em;
-    background-color: var(--rood);
-    z-index: 1000000;
-
-}  */
-
-main div:nth-of-type(1){
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 1em;
-    background-color: red;
-    z-index: 100000000000000;
-
-    scale: 0 1;
-
-    animation-name: progress;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-timeline: scroll();
 }
 
-@keyframes progress{
-    100% {
-        scale: 1 1;
-    }
-} 
 
 
-/****************/
-/* Laad animatie*/
-/****************/
 
-main>div:last-of-type {
-    height: 4em;
-    width: 4em;
-    border: .4em dotted;
-    border-color: var(--zwart) transparent var(--zwart) transparent;
-    border-radius: 50%;
-    animation: spin 1.25s linear infinite;
+/**************************/
+/* licht en donkere modus */
+/**************************/
 
-    position: fixed;
-    top: 50%;
-    left: 45%;
+main>section:last-of-type {
+    margin-top: 1em;
 }
 
-@keyframes spin {
-    0% {
-        scale: 0;
-    }
-
-    50% {
-        scale: 1;
-
-    }
-
-    100% {
-        transform: rotate(360deg);
-        scale: 0;
-    }
+main section:nth-of-type(6) label,
+main section:nth-of-type(8) label {
+    display: block;
+    margin-left: 2em;
+    line-height: 1.75em;
 }

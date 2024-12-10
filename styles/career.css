@@ -1,95 +1,138 @@
-/***************/
-/* lettertypes */
-/***************/
+/************************/
+/* lettertypes / koppen */
+/************************/
 
-main section:nth-of-type(1) h2{
+main>section:nth-of-type(1) h2 {
     font-size: 2em;
     font-weight: 500;
+    padding-top: 3em;
+    text-transform: uppercase;
 }
 
-main section:nth-of-type(3) h2{
+main section:nth-of-type(3) h2 {
     font-size: 1.5em;
     font-weight: 500;
 }
 
-main section:nth-of-type(4) h2{
+main section:nth-of-type(4) h2 {
     font-size: 3em;
     color: var(--grijs);
+    text-transform: uppercase;
 
 }
 
-main section:nth-of-type(4) h3{
+main section:nth-of-type(4) h3 {
     font-size: 1.5em;
     font-weight: 500;
 }
 
-main section:nth-of-type(5) h2{
+main section:nth-of-type(5) h2 {
     font-size: 2em;
     font-weight: 500;
 }
 
-main > section:nth-of-type(1) p{
-    margin-top: 4em;
-}
+
+
 
 /**************************/
 /* winkelmandje           */
 /**************************/
+
 dialog h3 {
     padding-left: 2em;
-  }
+}
 
 dialog section:nth-of-type(1) p {
     padding-left: 1em;
-  }
+}
+
+
+
 
 /**************************/
 /* buttons                */
 /**************************/
 
-main section:nth-of-type(1) button:nth-of-type(1){
-background-color: var(--zwart);
-color: var(--wit);
-padding: 1em 2em 1em 2em;
-border-radius: 0.75em;
-margin: 2em 0em 2em 0em;
+main section:nth-of-type(1) button:nth-of-type(1) {
+    background-color: var(--zwart);
+    color: var(--wit);
+    padding: 1em 2em 1em 2em;
+    border-radius: 0.75em;
+    margin: 2em 0em 2em 0em;
+    text-transform: uppercase;
 }
 
 
-main section:nth-of-type(1) button:nth-of-type(2){
+main section:nth-of-type(1) button:nth-of-type(2) {
     background-color: var(--wit);
     padding: 1em 2em 1em 2em;
     border-radius: 0.75em;
     margin: 2em 0em 2em 0em;
-    }
+    text-transform: uppercase;
+}
 
 main section:nth-of-type(1) button:nth-of-type(1):hover,
-main section:nth-of-type(1) button:nth-of-type(2):hover{
-        background-color: var(--grijs);
-        border: none;
-        color: var(--zwart);
-    }
+main section:nth-of-type(1) button:nth-of-type(2):hover {
+    background-color: var(--grijs);
+    border: none;
+    color: var(--zwart);
+}
+
+
+
+
+/***************************/
+/* link )layout vacatures) */
+/***************************/
+
+a {
+    color: var(--zwart);
+    text-decoration-thickness: 0.12em;
+    text-underline-offset: 0.4em;
+}
+
+main section:nth-of-type(5) a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.20em;
+    text-underline-offset: 0.5em;
+
+}
+
+a:focus-visible {
+    border-style: dotted;
+    border-width: .2em;
+    border-color: var(--zwart);
+}
+
+main a.active {
+    font-weight: 500;
+}
+
+
+
 
 /***************************/
 /* Career onderdeel layout */
 /***************************/
-main > section:nth-of-type(1){
+
+main>section:nth-of-type(1) {
     justify-items: center;
     align-items: center;
     text-align: center;
     margin: 2em 2em 0em 2em;
 }
 
+
+
+
 /***************************/
 /* scroll foto's           */
 /***************************/
 
-main > section:nth-of-type(2) > ul{
-    display:flex;
+main>section:nth-of-type(2)>ul {
+    display: flex;
     overflow-x: scroll;
     align-items: center;
-    justify-content: center;
-
 }
 
 main section:nth-of-type(2) img {
@@ -99,21 +142,21 @@ main section:nth-of-type(2) img {
 
 main section ul:nth-of-type(1) li {
     list-style: none;
- 
-  }
 
-  main section ul:nth-of-type(1) li:hover{
+}
+
+main section ul:nth-of-type(1) li:hover {
     transform: scale(1.05);
     transition: .5s;
-  }
-  
+}
+
 
 
 /****************************/
-/* Join Us onderdeel layput */
+/* Join Us onderdeel layout */
 /****************************/
 
-main section:nth-of-type(3){
+main section:nth-of-type(3) {
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -125,69 +168,81 @@ main section:nth-of-type(3){
 /* layout Our Values.     */
 /**************************/
 
-main section:nth-of-type(4){
-margin: 2em;
-display: flex;
-flex-direction: column;
+main section:nth-of-type(4) {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
-main section:nth-of-type(4) > h2{
+main section:nth-of-type(4)>h2 {
     order: -2;
 }
 
 
-main section:nth-of-type(4) > h3{
+main section:nth-of-type(4)>h3 {
     padding-top: 1em;
-    order:1;
-
+    order: 1;
 }
 
-main section:nth-of-type(4) > p{
-    order:1;
-
+main section:nth-of-type(4)>p {
+    order: 1;
 }
 
-/**************************/
-/* :has op afbeeldingen   */
-/**************************/
 
+
+
+/*************************************/
+/* :has op afbeeldingen Our Values.  */
+/*************************************/
 
 main section:nth-of-type(4) div {
-    display:grid;
+    display: grid;
 
 
 }
 
 main section:nth-of-type(4) div img {
-   grid-area:1/1;
-   width:100%;
-    height:100%;
+    grid-area: 1/1;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-   display:block;
+    display: block;
 
-   max-height: 30em;
-     object-fit: cover;
+    max-height: 30em;
+    object-fit: cover;
 
-   order:-1;
+    order: -1;
 
 }
 
 form label span {
     color: var(--wit);
-} 
+}
 
 
-main section:nth-of-type(4) div:has([value="foto1"]:checked) img[alt="foto1"] {z-index: 1;}
-main section:nth-of-type(4) div:has([value="foto2"]:checked) img[alt="foto2"] {z-index: 1;}
-main section:nth-of-type(4) div:has([value="foto3"]:checked) img[alt="foto3"] {z-index: 1;}
-main section:nth-of-type(4) div:has([value="foto4"]:checked) img[alt="foto4"] {z-index: 1;} 
+main section:nth-of-type(4) div:has([value="foto1"]:checked) img[alt="foto1"] {
+    z-index: 1;
+}
+
+main section:nth-of-type(4) div:has([value="foto2"]:checked) img[alt="foto2"] {
+    z-index: 1;
+}
+
+main section:nth-of-type(4) div:has([value="foto3"]:checked) img[alt="foto3"] {
+    z-index: 1;
+}
+
+main section:nth-of-type(4) div:has([value="foto4"]:checked) img[alt="foto4"] {
+    z-index: 1;
+}
 
 main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="foto1"]),
 main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="foto2"]),
 main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="foto3"]),
 main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="foto4"]) {
     accent-color: var(--zwart);
-} 
+}
+
 
 
 
@@ -195,41 +250,39 @@ main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="foto4"]) 
 /* layout vacatures       */
 /**************************/
 
-main section > section:nth-of-type(1) section {
+main section>section:nth-of-type(1) section {
     display: flex;
     justify-content: space-between;
-    align-items:first baseline;
+    align-items: first baseline;
     margin: 0em 2em 0em 2em;
 }
 
-main section:nth-of-type(5) section section{
+main section:nth-of-type(5) section section {
     margin-top: 4em;
 }
 
-
-main section:nth-of-type(5) > article h3 {
+main section:nth-of-type(5)>article h3 {
     font-weight: 400;
-    font-size: 1.2em;  
+    font-size: 1.2em;
+}
 
-} 
-
-article{
+article {
     margin: 2em 2em 0em 2em;
 }
 
-article > ul {
+article>ul {
 
     text-align: center;
 }
 
-article > ul > li {
+article>ul>li {
     background-color: var(--beige);
     border-radius: .75em;
     margin: 0em 0em 1em 0em;
     padding: 2em 0em 2em 0em;
 }
 
-article > ul > li:hover{
+article>ul>li:hover {
     border: solid .075em;
     color: var(--zwart);
     transform: scale(1.05);
@@ -237,72 +290,51 @@ article > ul > li:hover{
 }
 
 
-/**************************/
-/* layout vacatures button*/
-/**************************/
 
-article > ul > li button {
+
+/*****************************/
+/* vacatures button          */
+/*****************************/
+
+article>ul>li button {
     background-color: var(--wit);
-color: var(--zwart);
-padding: 1em 2em 1em 2em;
-border-radius: 0.75em;
-border: none;
-}
-
-article > ul > li button:hover {
-    background-color: var(--zwart);
-color: var(--wit);
-}
-
-/**************************/
-/* layout vacatures link  */
-/**************************/
-
-a{
     color: var(--zwart);
-text-decoration-thickness: 0.12em;
-text-underline-offset: 0.4em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 0.75em;
+    border: none;
 }
 
-main section:nth-of-type(5) a:hover {
-text-decoration: underline;
-text-decoration-thickness: 0.20em;
-text-underline-offset: 0.5em;
-
+article>ul>li button:hover {
+    background-color: var(--zwart);
+    color: var(--wit);
 }
 
-a:focus-visible {
-border-style: dotted;
-border-width: .2em;
-border-color: var(--zwart); 
-}
 
-main a.active {
-font-weight: 500;
-}
 
 
 /**************************/
 /* layout vragen          */
 /**************************/
 
-main section:nth-of-type(6){
+main section:nth-of-type(6) {
     margin: 4em 2em 0em 2em;
 }
+
 main section:nth-of-type(6) h2 {
     font-weight: 400;
     padding-bottom: 1.5em;
 }
-main section:nth-of-type(6) details{
+
+main section:nth-of-type(6) details {
     padding: 1em 2em 1em 2em;
     margin-bottom: 1em;
-border: solid 0.075em;
-border-color: var(--grijs);
-border-radius: 3em;
+    border: solid 0.075em;
+    border-color: var(--grijs);
+    border-radius: 3em;
 
 }
 
-main section:nth-of-type(6) details:hover{
+main section:nth-of-type(6) details:hover {
     border: solid .075em;
     color: var(--zwart);
     transform: scale(1.05);
@@ -314,21 +346,44 @@ main section:nth-of-type(6) summary img {
 }
 
 
-main section:nth-of-type(6) p{
+main section:nth-of-type(6) p {
     text-align: center;
     padding-top: 2em;
 }
 
-footer p{
-    margin: 0em 0em 0em 2em;
-}
+
 
 
 /**************************/
 /* themes layout          */
 /**************************/
-section:nth-of-type(5) label{ 
+
+section:nth-of-type(5) label {
     display: flex;
     flex-direction: column;
 
+}
+
+
+
+
+/**************************/
+/* Feedback               */
+/**************************/
+
+section:nth-of-type(8) p {
+    font-weight: 500;
+    font-style: italic;
+    padding: 1em 0 0 2em;
+}
+
+
+
+
+/**************************/
+/* Footer                 */
+/**************************/
+
+footer p {
+    margin: 0em 2em 0em 2em;
 }

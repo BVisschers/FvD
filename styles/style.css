@@ -1,3 +1,90 @@
+/********************/
+/* Algemene stijlen */
+/********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+
+  scroll-behavior: smooth;
+}
+
+.visually_hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.8em;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 2em 0em 1em 2em;
+}
+
+p {
+  line-height: 1.7em;
+}
+
+main > section:nth-of-type(1),
+main > section:nth-of-type(2),
+main > section:nth-of-type(3){
+  opacity: 0.4;
+  transform: translateY(-1em);
+
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+    transform: translateY(-1em);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+button:focus-visible {
+  border-style: dotted;
+  border-width: .2em;
+  border-color: var(--rood);
+}
+
+button:active {
+  font-weight: 500;
+}
+
+input:hover {
+  border-color: var(--zwart);
+  transform: scale(1.01);
+  transition: .5s;
+}
+
+input:focus-visible {
+  border-style: double;
+  border-width: .3em;
+  border-color: var(--rood);
+}
+
+
+
+
 /***************/
 /* lettertypes */
 /***************/
@@ -29,41 +116,18 @@
 
   font-style: italic;
 }
-h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-margin: 2em 0em 1em 2em;
-}
 
-p {
-  line-height: 1.7em;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-}
 
-/****************/
-/* root kleuren */
-/****************/
 
-/* 
-  --wit: #fff;
-  --beige: #F7F8F2;
-  --lichtGrijs: rgb(213, 213, 213);
-  --grijs: rgb(187, 187, 187);
-  --zwart: #000;
-  --rood: rgb(162, 16, 16);
-  --achtergrondkleur: #fff; */
-
+/*******************/
+/* kleuren en root */
+/*******************/
 
 :root {
   color-scheme: light dark;
 
-  --wit: light-dark(White, black);
+  --wit: light-dark(White, #000000);
   --beige: light-dark(#F7F8F2, #908d7c);
   --lichtGrijs: light-dark(rgb(213, 213, 213), rgb(143, 143, 143));
   --grijs: light-dark(rgb(187, 187, 187), rgb(98, 97, 97));
@@ -84,7 +148,6 @@ p {
 
 :root:has([value="dark"]:checked) {
   color-scheme: dark;
-
   accent-color: var(--wit);
 
   header img:first-of-type {
@@ -93,7 +156,7 @@ p {
 
   main section:nth-of-type(6) summary img {
     filter: invert(100%);
-  
+
   }
 
 }
@@ -102,8 +165,9 @@ p {
 
 
 /***************/
-/* header */
+/* header      */
 /***************/
+/* bron: Sanne */
 
 header {
   display: flex;
@@ -114,8 +178,8 @@ header {
   z-index: 2;
   position: fixed;
   top: 0;
-  right:0;
-  left:0;
+  right: 0;
+  left: 0;
   background-color: var(--wit);
 }
 
@@ -135,26 +199,10 @@ header nav {
   translate: 0 -100%;
 }
 
-/* header ul:last-of-type {
-  display: flex;
-  gap: 1em;
-} */
-
-
-/* header ul:last-of-type li img {
-  width: 1.2em;
-  height: auto;
-} */
-
 header nav ul li a {
   text-decoration: none;
   color: var(--zwart);
 }
-
-header li {
-  list-style: none;
-}
-
 
 header nav ul li a:hover {
   text-decoration: underline;
@@ -165,6 +213,11 @@ header nav ul li a:hover {
 header nav a.active {
   font-weight: 500;
 }
+
+header li {
+  list-style: none;
+}
+
 
 
 
@@ -205,15 +258,15 @@ button.toonMenu img {
 }
 
 
-/* als menu open is */
+/*****************/
+/* Menu open     */
+/*****************/
+
 nav.toonMenu {
   translate: 0;
   background-color: var(--wit);
   padding-top: 7em;
   z-index: 2;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 }
 
 nav.toonMenu li {
@@ -223,9 +276,9 @@ nav.toonMenu li {
 
 
 
-/*****************/
-/* Zoeken header */
-/*****************/
+/*******************/
+/* Zoekbalk header */
+/*******************/
 
 header nav form {
   display: flex;
@@ -253,12 +306,112 @@ header form input {
 
 
 
+/***********************/
+/* Winkelmandje header */
+/***********************/
+
+dialog {
+  top: 0;
+  left: auto;
+  height: 100vh;
+  border-style: none;
+  z-index: 10;
+  width: 80%;
+}
+
+dialog form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--wit);
+}
+
+dialog h3 {
+  padding-top: 3em;
+  font-weight: 400;
+}
+
+dialog section:nth-of-type(2) h4 {
+  font-weight: 400;
+}
+
+dialog.show {
+  background-color: var(--wit);
+  color: var(--zwart);
+  z-index: 1000;
+}
+
+html:has(header dialog[open]) {
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+
+dialog button.sluiten {
+  position: absolute;
+  top: 3em;
+  right: 2em;
+  width: 4em;
+
+}
+
+dialog section:nth-of-type(1) {
+  margin-top: .5em;
+  background-color: var(--beige);
+  display: flex;
+  flex-direction: row-reverse;
+
+  align-items: center;
+  justify-content: start;
+  top: 4em;
+  padding: .7em 2em .7em 2em;
+}
+
+dialog section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+
+}
+
+dialog section:nth-of-type(1) img {
+  width: 3em;
+  height: auto;
+
+}
+
+dialog section:nth-of-type(2) img {
+  order: -1;
+  width: 7em;
+}
+
+dialog button:last-of-type {
+  background-color: var(--zwart);
+  color: var(--wit);
+  border-radius: 1.075em;
+  width: 88%;
+  margin: 0em 2em 0em 2em;
+  bottom: 3em;
+  margin-top: auto;
+  line-height: 4em;
+  text-transform: uppercase;
+}
+
+dialog button:last-of-type:hover {
+  background-color: var(--grijs);
+}
+
+
+
 
 /****************************************************************/
-/* styling voor de header als de browser minimaal 54em breed is */
+/* styling voor de header browser minimaal 54em breed           */
 /****************************************************************/
+
 @media (width > 54em) {
-  header button:nth-of-type(1){
+  header > button:nth-of-type(1) {
     display: none;
   }
 
@@ -284,6 +437,7 @@ header form input {
 
 
 
+
 /*******************************************************************************/
 /* styling voor de zoekbalk als de header in de browser minimaal 54em breed is */
 /*******************************************************************************/
@@ -295,191 +449,6 @@ header form input {
 }
 
 
-/****************/
-/* Winkelmandje */
-/****************/
-dialog {
-  top: 0;
-  left: auto;
-  height: 100vh; 
-  border-style: none;
-  z-index: 10;
-  width: 80%;
-
-
-}
-
-
-
-dialog form{
-  height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--wit);
-
-}
-
-dialog.show{
-  background-color: var(--wit);
-  color: var(--zwart);
-  z-index: 1000;
-
-}
-
-dialog h3{
-  padding-top: 3em;
-  font-weight: 400;
-
-}
-
-dialog section:nth-of-type(2) h4 {
-  font-weight: 400;
-}
-
-
-html:has(header dialog[open]) {
-	overflow:hidden;
-	scrollbar-gutter: stable;
-}
-
-
-dialog button.sluiten{
-  position: absolute;
-  top: 3em;
-  right: 2em;
-  width: 4em;
-
-}
-
-dialog section:nth-of-type(1){
-  margin-top: .5em;
-  background-color: var(--beige);
-
-  display: flex;
-  flex-direction: row-reverse;
-  
-  align-items: center; 
-  justify-content: start;
-  top: 4em;
-  padding: .7em 2em .7em 2em;
-}
-
-dialog section:nth-of-type(2){
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-
-}
-
-dialog section:nth-of-type(1) img{
-  width: 3em;
-  height: auto;
-
-}
-
-dialog section:nth-of-type(2) img{
-  order: -1;
-  width: 7em;
-}
-
-dialog button:last-of-type{
-  background-color: var(--zwart);
-  color: var(--wit);
-  border-radius: 1.075em;
-  width: 88%;
-  margin: 0em 2em 0em 2em;
-  bottom: 3em; 
-  margin-top: auto;
-  line-height: 4em;
-} 
-
-dialog button:last-of-type{
-  background-color: var(--zwart);
-  color: var(--wit);
-  border-radius: 1.075em;
-  width: 88%;
-  margin: 0em 2em 0em 2em;
-  bottom: 3em; 
-  margin-top: auto;
-  line-height: 4em;
-} 
-
-dialog button:last-of-type:hover{
-background-color: var(--grijs);
-} 
-
-
-
-
-/***************/
-/* Hidden      */
-/***************/
-
-.visually_hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-
-
-
-
-/****************************************************************/
-/* styling algemeen tekst */
-/****************************************************************/
-
-h1,
-h2,
-h3 {
-  margin-bottom: 0.8em;
-}
-
-
-
-/* main label {
-	display:block; 
-    margin-bottom: .75em;
-    width: 90vw;
-    margin-left: 2em; 
-} */
-
-/****************************************************************/
-/* button focus en actieve stijl alle knoppen */
-/****************************************************************/
-
-button:focus-visible {
-  border-style: dotted;
-  border-width: .2em;
-  border-color: var(--rood);
-}
-
-button:active {
-  font-weight: 500;
-}
-
-
-/****************************************************************/
-/* invoervelden hover */
-/****************************************************************/
-input:hover {
-  border-color: var(--zwart);
-  transform: scale(1.01);
-  transition: .5s;
-}
-
-input:focus-visible {
-  border-style: double;
-  border-width: .3em;
-  border-color: var(--rood);
-}
 
 
 /******************/
@@ -490,7 +459,7 @@ footer>section:nth-of-type(1) {
   margin-top: 2em;
 }
 
-footer section:nth-of-type(1) section:nth-of-type(1) p {
+footer > section:nth-of-type(1) section:nth-of-type(1) p {
   border-top: .075em solid var(--grijs);
   padding-top: 2em;
   margin-bottom: 2em;
@@ -514,13 +483,11 @@ footer form input {
 }
 
 
-/************************/
-/* Footer summary       */
-/************************/
 
-footer section:nth-of-type(2) {
-  margin-top: 2em;
-}
+
+/********************************/
+/* Footer summary/ detail       */
+/********************************/
 
 footer details {
   border-bottom: .075em solid var(--grijs);
@@ -530,20 +497,26 @@ footer details {
   list-style: none;
 }
 
-
 /* Voor safari list item weg */
 details summary::-webkit-details-marker {
   display: none;
 }
 
-
 summary {
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 1em;
+}
 
+details img {
+  rotate: 0deg;
+  transition: rotate 0.5s;
+}
+
+details[open] img {
+  rotate: 180deg;
+  transition: .5s;
 }
 
 footer details:first-of-type summary img,
@@ -553,32 +526,26 @@ footer details:nth-of-type(2) summary img {
 
 }
 
-footer section:nth-of-type(1) img {
-  display: flex;
-  width: 2em;
-}
-
-details img {
-  rotate: 0deg; 
-  transition: rotate 0.5s;
-}
-
-details[open] img {
-  rotate: 180deg;
-  transition: .5s;
-}
-
-
 section>details ul li {
   list-style: none;
   padding-bottom: .5em;
 }
 
+footer section:nth-of-type(1) img {
+  display: flex;
+  width: 2em;
+}
+
+footer section:nth-of-type(2) {
+  margin-top: 2em;
+}
+
+
+
 
 /*************************/
 /* footer social iconen  */
 /*************************/
-
 
 footer section:nth-of-type(3) ul {
   list-style: none;
@@ -591,9 +558,25 @@ footer section:nth-of-type(3) ul {
 }
 
 
+
+
 /*************************/
-/* soort nav footer      */
+/* footer navigatie      */
 /*************************/
+
+footer a {
+  color: var(--zwart);
+}
+
+footer section ul li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.4em;
+}
+
+footer nav a.active {
+  font-weight: 500;
+}
 
 footer section:nth-of-type(4) ul {
   display: flex;
@@ -611,24 +594,13 @@ footer section:nth-of-type(4) ul a {
   text-decoration: none;
 }
 
-footer a {
-  color: var(--zwart);
-}
 
-footer section ul li a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 0.12em;
-  text-underline-offset: 0.4em;
-}
-
-footer nav a.active {
-  font-weight: 500;
-}
 
 
 /*************************/
 /* betaalmogelijkheden   */
 /*************************/
+
 footer section:nth-of-type(5) ul {
   list-style: none;
   display: flex;
@@ -639,13 +611,14 @@ footer section:nth-of-type(5) ul {
 }
 
 
+
+
 /*************************/
 /* copyright             */
 /*************************/
+
 footer section:nth-of-type(6) p {
   padding-top: 2em;
   padding-bottom: 2em;
   font-size: 0.75em;
 }
-
-
