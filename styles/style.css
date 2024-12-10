@@ -37,9 +37,9 @@ p {
   line-height: 1.7em;
 }
 
-main > section:nth-of-type(1),
-main > section:nth-of-type(2),
-main > section:nth-of-type(3){
+main>section:nth-of-type(1),
+main>section:nth-of-type(2),
+main>section:nth-of-type(3) {
   opacity: 0.4;
   transform: translateY(-1em);
 
@@ -54,9 +54,10 @@ main > section:nth-of-type(3){
     opacity: 0.4;
     transform: translateY(-1em);
   }
+
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -218,7 +219,7 @@ header li {
   list-style: none;
 }
 
-header button{
+header button {
   color: var(--zwart)
 }
 
@@ -415,7 +416,7 @@ dialog button:last-of-type:hover {
 /****************************************************************/
 
 @media (width > 54em) {
-  header > button:nth-of-type(1) {
+  header>button:nth-of-type(1) {
     display: none;
   }
 
@@ -463,7 +464,7 @@ footer>section:nth-of-type(1) {
   margin-top: 2em;
 }
 
-footer > section:nth-of-type(1) section:nth-of-type(1) p {
+footer>section:nth-of-type(1) section:nth-of-type(1) p {
   border-top: .075em solid var(--grijs);
   padding-top: 2em;
   margin-bottom: 2em;
@@ -557,7 +558,8 @@ footer section:nth-of-type(3) ul {
   flex-direction: row;
   gap: 1em;
   padding-top: 2em;
-  margin-left: 2em;
+  margin: 0 2em 0 2em;
+  justify-content: space-between;
 
 }
 
@@ -611,7 +613,8 @@ footer section:nth-of-type(5) ul {
   flex-direction: row;
   gap: 1em;
   padding-top: 2em;
-  margin-left: 2em;
+  margin: 0 2em 0 2em;
+  justify-content: space-between;
 }
 
 

@@ -39,11 +39,11 @@ main>div:last-of-type {
     border: .4em dotted;
     border-color: var(--zwart) transparent var(--zwart) transparent;
     border-radius: 50%;
-    
+
     animation-name: spin;
     animation-duration: 1s;
     animation-timing-function: linear;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
 
     position: fixed;
     top: 40%;

@@ -9,13 +9,13 @@ main>section:nth-of-type(1) h2 {
     text-transform: uppercase;
 }
 
-main section:nth-of-type(3) h2 {
+main section:nth-of-type(3) h3 {
     font-size: 1.5em;
     font-weight: 500;
 }
 
 main section:nth-of-type(4) h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     color: var(--grijs);
     text-transform: uppercase;
 
@@ -27,8 +27,13 @@ main section:nth-of-type(4) h3 {
 }
 
 main section:nth-of-type(5) h2 {
-    font-size: 2em;
+    font-size: 1.9em;
     font-weight: 500;
+}
+
+main section:nth-of-type(6) h2 {
+    font-weight: 400;
+    padding-bottom: 1.5em;
 }
 
 
@@ -50,8 +55,13 @@ dialog section:nth-of-type(1) p {
 
 
 /**************************/
-/* buttons                */
+/* buttons careers        */
 /**************************/
+
+main section:nth-of-type(1) div {
+    display: flex;
+    gap: 1em;
+}
 
 main section:nth-of-type(1) button:nth-of-type(1) {
     background-color: var(--zwart);
@@ -164,6 +174,8 @@ main section:nth-of-type(3) {
 }
 
 
+
+
 /**************************/
 /* layout Our Values.     */
 /**************************/
@@ -218,7 +230,6 @@ main section:nth-of-type(4) div img {
 form label span {
     color: var(--wit);
 }
-
 
 main section:nth-of-type(4) div:has([value="foto1"]:checked) img[alt="foto1"] {
     z-index: 1;
@@ -320,11 +331,6 @@ main section:nth-of-type(6) {
     margin: 4em 2em 0em 2em;
 }
 
-main section:nth-of-type(6) h2 {
-    font-weight: 400;
-    padding-bottom: 1.5em;
-}
-
 main section:nth-of-type(6) details {
     padding: 1em 2em 1em 2em;
     margin-bottom: 1em;
@@ -341,14 +347,17 @@ main section:nth-of-type(6) details:hover {
     transition: .5s;
 }
 
+
 main section:nth-of-type(6) summary img {
-    max-width: 2em;
+    max-width: 2.3em;
+    height: auto;
+    padding-left: 0.7em;
 }
 
 
 main section:nth-of-type(6) p {
     text-align: center;
-    padding-top: 2em;
+    padding: 2em 0em 2em 0;
 }
 
 
@@ -361,7 +370,6 @@ main section:nth-of-type(6) p {
 section:nth-of-type(5) label {
     display: flex;
     flex-direction: column;
-
 }
 
 
