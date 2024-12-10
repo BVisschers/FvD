@@ -231,26 +231,26 @@ form label span {
     color: var(--wit);
 }
 
-main section:nth-of-type(4) div:has([value="foto1"]:checked) img[alt="foto1"] {
+main section:nth-of-type(4) div:has([value="foto1"]:checked) img[alt="Twee vrouwen die in gesprek zijn"] {
     z-index: 1;
 }
 
-main section:nth-of-type(4) div:has([value="foto2"]:checked) img[alt="foto2"] {
+main section:nth-of-type(4) div:has([value="foto2"]:checked) img[alt="Kantoor van Lounge"] {
     z-index: 1;
 }
 
-main section:nth-of-type(4) div:has([value="foto3"]:checked) img[alt="foto3"] {
+main section:nth-of-type(4) div:has([value="foto3"]:checked) img[alt="Meeting bij Lounge tussen werknemers"] {
     z-index: 1;
 }
 
-main section:nth-of-type(4) div:has([value="foto4"]:checked) img[alt="foto4"] {
+main section:nth-of-type(4) div:has([value="foto4"]:checked) img[alt="Werknemers aan het werk achter de computer"] {
     z-index: 1;
 }
 
-main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="foto1"]),
-main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="foto2"]),
-main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="foto3"]),
-main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="foto4"]) {
+main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="Twee vrouwen die in gesprek zijn"]),
+main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="Kantoor van Lounge"]),
+main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="Meeting bij Lounge tussen werknemers"]),
+main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="Werknemers aan het werk achter de computer"]) {
     accent-color: var(--zwart);
 }
 
