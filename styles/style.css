@@ -218,6 +218,10 @@ header li {
   list-style: none;
 }
 
+header button{
+  color: var(--zwart)
+}
+
 
 
 
