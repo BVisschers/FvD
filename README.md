@@ -62,7 +62,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:<br><br>
   <strong>Goed</strong><br>
-•	Alle links worden op een logische manier doorlopen en geen enkele link wordt overgeslagen. Ook hebben alle links een logische naam, zodat ze herkenbaar zijn en duidelijk is waar ze naartoe leiden. <br>
+•	Alle links worden op een logische manier doorlopen en geen enkele link wordt overgeslagen. De links zouden wel een logischere naam kunnen krijgen over waar ze naartoe gaan. <br>
 •	Alle oriëntatiepunten worden goed doorlopen; hij gaat ze allemaal langs.<br>
 •	De vensterspots worden goed uitgevoerd en laten het scherm en de knoppenbalk zien.<br>
 •	Als ik het pijltje naar rechts gebruik, worden alle woorden doorlopen en gespeld in de navigatie, zie de afbeelding.<br>
@@ -223,7 +223,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | Menu icoon     | Margin gebruiken   | Website      | Uitlijnen iconen |
-  | verdwenen      | om onderdelen goed | responsive   |
+  | verdwenen      | om onderdelen goed | responsive   |                  |
   | ...            | uit te lijnen      | maken        |                  |
 
 
@@ -252,6 +252,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  •	Als ik nu alle koppen wil doorlopen gaat de screenreader ze allemaal af, ook de koppen van Black Friday en Sunday Club.<br>
+  <img src="readme-images/koppen_voorlezen.png" width="175px" alt="afbeelding van beginscherm waar de kop wordt voorgelezen"> <br>
+  • Als ik nu met de Tab toets langs de formulieren ga, dan worden deze niet overgeslagen. <br>
+  <img src="readme-images/formulier_voorlezen.png" width="175px" alt="afbeelding van het formulier wat wordt voorgelezen"> <br>
+  • De koppen hebben een logische omschrijving. <br>
+  • De footer wordt op een logische manier doorlopen. <br>
+  • Als ik alle elementen langs wil gaan, wordt er niks overgeslagen, de alt van de afbeeldingen wordt ook netjes voorgelezen. <br>
+  <img src="readme-images/alt_voorlezen.png" width="175px" alt="afbeelding dat de alt wordt voorgelezen"> <br>
 
 </details>
 
@@ -299,10 +307,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik heb met Tycho zijn vraag meegekeken over grid. Ik heb geleerd hoe je de footer responsive kan maken door grid te gebruiken.<br>
+  <img src="readme-images/grid_footer.png" width="175px" alt="Code voor een grid te gebruiken in je footer"> <br>
+  - Scroll timeline maken met css in plaats van Java, is makkelijker en minder regels code. Je krijgt precies hetzelfde. Het werkt alleen in Google, vanaf volgend naar misschien in Safari en FireFox.<br>
+  <img src="readme-images/scroll.png" width="175px" alt="Code voor het maken van de scrollbar"> <br>
+  - Om de afbeelding niet groter te maken dan een bepaalde hoogte kan ik max-height: 27em; object-fit: cover; gebruiken. <br>
+  - De labels van de themes en dark en light mode moet ik specifieker aanroepen, en er display block op zetten.<br>
 
 </details>
 
@@ -321,14 +331,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  -Het uitwerken van de Themes met :has ging erg goed. Dit had ik nog niet eerder gebruikt, en dus veel over geleerd. Ik vond het erg leuk om toe te passen waardoor ik verschillende elementen heb toegevoegd binnen de :has.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/themes_code.png" width="375px" alt="Code die ik heb geschreven bij de Themes van de website">
 
+  -Ik heb veel verschillende dingen geleerd wat betreft Javascript, zie de afbeeldingen hieronder wat ik geleerd heb.
+  <img src="readme-images/themes_roze.png" width="375px" alt="Schermafbeelding van wat ik met Java script heb gemaakt als feedback op een interactie">
+  <img src="readme-images/button_sign_up.png" width="375px" alt="Schermafbeelding van de code om de button kleur te veranderen na een klik">
+  <img src="readme-images/scrollen_button.png" width="375px" alt="Schermafbeelding van de code om naar een kop te scrollen">
+
+ - Ook heb ik geleerd hoe ik een scrollbar kan maken met Css.
+ <img src="readme-images/scrollbar_css.png" width="375px" alt="Afbeelding van de gemaakte scrollbar">
+ 
+  -Verder heb ik geleerd hoe je op een semantische manier elementen kan aanroepen in je css en of java met :nth-of-type.
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  -Het was lastig om bij de audio een transcript toe te voegen die wordt voorgelezen door de screenreader. Dit is mij dan uiteindelijk ook niet gelukt. 
+  <img src="readme-images/audio_transcript.png" width="375px" alt="Foto van de code die ik heb gebruikt voor audio transcript">
+  
+  -Ik snap grid wel, maar om het zelf toe te passen blijf ik wel lastig vinden, uiteindelijk lukt het wel. Na veel oefenen ga ik dit onder de knie krijgen!
+
 </details>
 
 
@@ -344,8 +368,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Sanne die mij heeft uitgelegd hoe ik een scroll bar kan maken, zie afbeelding.<br>
+   <img src="readme-images/scroll.png" width="175px" alt="Code voor het maken van de scrollbar"> <br>
+  2. Sanne die mij heeft geholpen met het maken van het hamburgermenu<br>
+  3. Chat GPT, prompt: Wat kan ik gebruiken om variabelen of expressies in een string in te voegen? Antwoord: ${radio.value}
+  4. bron: Chat GamepadHapticActuator, prompt: Hoe kan ik alleen een specifieke pagina selecteren?
+  5. bron: Chat GPT, prompt: Hoe kan ik ervoor zorgen dat als je klikt op de button Available roles dat je naar de h2 Featured Roles scrolt?
+  6. bron: Chat GPT, prompt: Hoe zorg ik ervoor dat het formulier niet gelijk wordt ingediend?
 
 </details>
