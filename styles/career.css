@@ -247,13 +247,6 @@ main section:nth-of-type(4) div:has([value="foto4"]:checked) img[alt="Werknemers
     z-index: 1;
 }
 
-main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="Twee vrouwen die in gesprek zijn"]),
-main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="Kantoor van Lounge"]),
-main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="Meeting bij Lounge tussen werknemers"]),
-main section:nth-of-type(4) div:has(input[type="radio"]:checked[value="Werknemers aan het werk achter de computer"]) {
-    accent-color: var(--zwart);
-}
-
 
 
 
