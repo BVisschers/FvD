@@ -3,15 +3,10 @@
 /****************************************/
 // bron: Chat GPT, prompt: Hoe zorg ik ervoor dat het formulier niet gelijk wordt ingediend?
 
-var SignUp = document.querySelector("section:nth-of-type(4) button");
-
-SignUp.addEventListener("click", function(event) {
-
+document.querySelector("section:nth-of-type(4) button").addEventListener("click", function(event) {
     event.preventDefault();
-
-    SignUp.style.backgroundColor = "#000000";
-    SignUp.style.color = "#fff";
-    SignUp.textContent = "Signed Up!";
+    this.setAttribute("data-state", "signed-up");
+    this.textContent = "Signed Up!";
 });
 
 

@@ -3,11 +3,14 @@
 /****************************************/
 // bron: Chat GPT, prompt: Hoe kan ik ervoor zorgen dat als je klikt op de button Available roles dat je naar de <h2>Featured Roles</h2> scrolt?
 
-function scrollNaarFeaturedRoles() {
-    document.querySelector('main > section:nth-of-type(5)').scrollIntoView({
-        behavior: 'smooth'
+document.addEventListener('DOMContentLoaded', () => {
+    const buttonRoles = document.querySelector('main section:nth-of-type(1) button:nth-of-type(1)');
+    buttonRoles.addEventListener('click', () => {
+        document.querySelector('main > section:nth-of-type(5)').scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-}
+});
 
 /****************************************/
 /* Feedback themes & Light en dark      */
