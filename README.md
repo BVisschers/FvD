@@ -251,7 +251,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):<br>
   •	Als ik nu alle koppen wil doorlopen gaat de screenreader ze allemaal af, ook de koppen van Black Friday en Sunday Club.<br>
   <img src="readme-images/koppen_voorlezen.png" width="175px" alt="afbeelding van beginscherm waar de kop wordt voorgelezen"> <br>
   • Als ik nu met de Tab toets langs de formulieren ga, dan worden deze niet overgeslagen. <br>
@@ -274,7 +274,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  <strong>Wat er goed ging</strong><br>
+  <strong>Wat er goed ging</strong><br><br>
   - Het maken van de tweede pagina ging beter en sneller dan verwacht, ik liep minder vaak vast.<br>
   - Het maken van de laadanimatie was goed gelukt.<br>
   <img src="readme-images/laad_icoon.png" width="175px" alt="scherm afbeelding van mijn gemaakte laadicoon"> <br>
@@ -326,7 +326,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/home_eindresultaat" width="375px" alt="uitomst opdracht 1 homepage">
+  <img src="readme-images/career_eindresultaat" width="375px" alt="uitomst opdracht 1 homepage">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -348,7 +349,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  -Het was lastig om bij de audio een transcript toe te voegen die wordt voorgelezen door de screenreader. Dit is mij dan uiteindelijk ook niet gelukt. 
+  -Het was lastig om bij de audio een transcript toe te voegen die wordt voorgelezen door de screenreader. Dit is mij dan uiteindelijk ook niet gelukt. <br>
   <img src="readme-images/audio_transcript.png" width="375px" alt="Foto van de code die ik heb gebruikt voor audio transcript">
   
   -Ik snap grid wel, maar om het zelf toe te passen blijf ik wel lastig vinden, uiteindelijk lukt het wel. Na veel oefenen ga ik dit onder de knie krijgen!
